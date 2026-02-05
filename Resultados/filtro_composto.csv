@@ -1,0 +1,5 @@
+Arquivo,Execucao,linhas_processadas,tempo_total_s,tempo_cpu_s,memoria_MB,linhas_por_segundo
+PARTICIPANTES_2024.csv,pandas,51798,15.06,14.53,47.78,3439.44
+RESULTADOS_2024.csv,pandas,463952,30.44,29.36,1332.41,15241.52
+PARTICIPANTES_2024.csv,spark,51798,21.18,0.77,-83.12,2445.61
+RESULTADOS_2024.csv,spark,463952,4.24,0.05,0.01,109422.64
