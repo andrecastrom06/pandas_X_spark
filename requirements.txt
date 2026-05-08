@@ -1,3 +1,2 @@
-pandas
-pyspark
-psutil
+pandas>=2.2.3
+psutil>=7.0.0
