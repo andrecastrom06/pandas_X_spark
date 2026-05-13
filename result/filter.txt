@@ -80,11 +80,3 @@ Tempo de Resposta: 3.0817 s
 Tempo de CPU: 3.02 s
 Uso de Memória: 4146.18 MB
 
-============================================================
-Ferramenta: Spark
-Dataset: covid_2020_2021_200.csv
-Execução: 1
-------------------------------------------------------------
-Tempo de Resposta: 84.5892 s
-Tempo de CPU: 57.53 s
-Uso de Memória: 2515.68 MB

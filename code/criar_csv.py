@@ -22,7 +22,7 @@ def create_drop_spark(df):
         'edad'
     )
 
-    novo_df.collect()
+    novo_df.count()
 
     del novo_df
 
