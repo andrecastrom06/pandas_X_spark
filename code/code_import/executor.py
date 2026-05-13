@@ -12,6 +12,8 @@ from code_import.result import exportar_metricas
 spark = SparkSession.builder \
     .master("local[*]") \
     .appName("Benchmark") \
+    .config("spark.driver.host", "127.0.0.1") \
+    .config("spark.driver.bindAddress", "127.0.0.1") \
     .getOrCreate()
 
 
@@ -33,7 +35,7 @@ def executar_benchmark(
 
         for execucao in range(1, 4):
 
-            df = pd.read_csv(dataset)
+            df = pd.read_csv(f"../data/{dataset}")
 
             inicio = capturar_metricas_inicio()
 
@@ -61,7 +63,7 @@ def executar_benchmark(
         for execucao in range(1, 4):
 
             df_spark = spark.read.csv(
-                dataset,
+                f"../data/{dataset}",
                 header=True,
                 inferSchema=True
             )

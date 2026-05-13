@@ -5,18 +5,13 @@ def cast_pandas(df):
 
     df['edad'] = df['edad'].astype('float')
 
-    df['fecha_diagnostico'] = (
-        df['fecha_diagnostico']
-        .astype('datetime64[ns]')
-    )
-
     df['id_evento_caso'] = (
         df['id_evento_caso']
         .astype('string')
     )
 
-    df['fallecido'] = (
-        df['fallecido']
+    df['residencia_provincia_nombre'] = (
+        df['residencia_provincia_nombre']
         .astype('string')
     )
 
@@ -31,7 +26,6 @@ def cast_spark(df):
 
     from pyspark.sql.types import (
         FloatType,
-        DateType,
         StringType
     )
 
@@ -41,21 +35,16 @@ def cast_spark(df):
     )
 
     df = df.withColumn(
-        'fecha_diagnostico',
-        col('fecha_diagnostico').cast(DateType())
-    )
-
-    df = df.withColumn(
         'id_evento_caso',
         col('id_evento_caso').cast(StringType())
     )
 
     df = df.withColumn(
-        'fallecido',
-        col('fallecido').cast(StringType())
+        'residencia_provincia_nombre',
+        col('residencia_provincia_nombre').cast(StringType())
     )
 
-    df.collect()
+    df.printSchema()
 
     return df
 

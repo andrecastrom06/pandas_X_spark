@@ -26,3 +26,22 @@
 
 4. Processo Integrador (Caso de Uso Real):
 - Um cenário que simula um fluxo de trabalho completo (ETL), unindo os dados de casos de COVID-19 da Argentina com dados geográficos de províncias para gerar um relatório final.
+
+## Como Executar:
+Configure um ambiente Linux, após isso crie uma venv com:
+* python -m venv venv
+
+Ative a venv com:
+* source venv/bin/activate
+
+Baixe as bibliotecas utilizadas no projeto:
+* pip install -r requirements.txt
+
+Baixe o Java para o Apache Spark
+* sudo apt install openjdk-17-jdk -y
+
+Confirme se baixou a versão 17:
+* java -version
+
+Rode o comando:
+* bash ./run.sh
