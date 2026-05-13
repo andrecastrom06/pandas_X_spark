@@ -20,7 +20,7 @@ def orderby_spark(df):
         col('edad').asc()
     )
 
-    resultado.collect()
+    resultado.count()
 
     return resultado
 

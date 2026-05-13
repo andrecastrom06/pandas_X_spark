@@ -29,7 +29,7 @@ def filter_spark(df):
         col('edad') > 30
     )
 
-    filtro_1.collect()
+    filtro_1.count()
 
     filtro_2 = df.filter(
         (col('edad') > 30) &
@@ -40,7 +40,7 @@ def filter_spark(df):
         )
     )
 
-    filtro_2.collect()
+    filtro_2.count()
 
     return filtro_2
 

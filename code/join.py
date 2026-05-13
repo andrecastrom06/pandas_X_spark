@@ -44,7 +44,7 @@ def join_spark(df):
         how='inner'
     )
 
-    resultado.collect()
+    resultado.count()
 
     return resultado
 

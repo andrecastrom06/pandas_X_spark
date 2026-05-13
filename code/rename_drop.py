@@ -1,58 +1,40 @@
 from code_import.executor import executar_benchmark
 
-
 def rename_drop_pandas(df):
-
     df_rename = df.rename(columns={
-        'id_evento_caso': 'id_caso',
-        'sexo': 'genero',
-        'edad': 'idade',
-        'fallecido': 'obito'
+        "edad": "idade",
+        "sexo": "genero",
+        "fecha_apertura": "data_abertura"
     })
 
-    df_drop = df_rename.drop(columns=[
-        'fecha_fallecimiento',
-        'cuidado_intensivo',
-        'asistencia_respiratoria_mecanica'
-    ])
-
-    df_drop.head()
+    df_drop = df_rename.drop(
+        columns=[
+            "fecha_fallecimiento",
+            "cuidado_intensivo",
+            "asistencia_respiratoria_mecanica"
+        ],
+        errors="ignore" 
+    )
 
     return df_drop
 
-
-def rename_drop_spark(df):
-
-    df = df.withColumnRenamed(
-        'id_evento_caso',
-        'id_caso'
+def rename_drop_spark(df_spark):
+    df_rename = (
+        df_spark
+        .withColumnRenamed("edad", "idade")
+        .withColumnRenamed("sexo", "genero")
+        .withColumnRenamed("fecha_apertura", "data_abertura")
     )
 
-    df = df.withColumnRenamed(
-        'sexo',
-        'genero'
+    df_drop = df_rename.drop(
+        "fecha_fallecimiento",
+        "cuidado_intensivo",
+        "asistencia_respiratoria_mecanica"
     )
 
-    df = df.withColumnRenamed(
-        'edad',
-        'idade'
-    )
+    df_drop.count()
 
-    df = df.withColumnRenamed(
-        'fallecido',
-        'obito'
-    )
-
-    df = df.drop(
-        'fecha_fallecimiento',
-        'cuidado_intensivo',
-        'asistencia_respiratoria_mecanica'
-    )
-
-    df.collect()
-
-    return df
-
+    return df_drop
 
 executar_benchmark(
     nome_arquivo_teste="rename_drop",

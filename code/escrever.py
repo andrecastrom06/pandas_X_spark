@@ -30,6 +30,8 @@ def insert_drop_row_spark(df):
 
     from pyspark.sql import Row
 
+    spark = df.sparkSession
+
     temp_df = df.select(
         'id_evento_caso',
         'edad'
@@ -44,13 +46,13 @@ def insert_drop_row_spark(df):
 
     temp_df = temp_df.union(nova_linha)
 
-    temp_df.collect()
+    temp_df.count()
 
     temp_df = temp_df.filter(
         temp_df.id_evento_caso != '999999'
     )
 
-    temp_df.collect()
+    temp_df.count()
 
     return temp_df
 
