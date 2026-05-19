@@ -20,7 +20,8 @@ spark = SparkSession.builder \
 DATASETS = [
     "covid_2020_2021_200.csv",
     "covid_2020_2021_600.csv",
-    "covid_2020_2021_1800.csv"
+    "covid_2020_2021_1800.csv",
+    "Covid19Casos.csv"
 ]
 
 
