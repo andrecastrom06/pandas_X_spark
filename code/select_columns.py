@@ -4,11 +4,7 @@ def select_columns_pandas(df):
 
     resultado = df[
         [
-            'id_evento_caso',
-            'sexo',
-            'edad',
-            'residencia_provincia_nombre',
-            'fallecido'
+            'id_evento_caso'
         ]
     ]
 
@@ -19,14 +15,10 @@ def select_columns_pandas(df):
 def select_columns_spark(df):
 
     resultado = df.select(
-        'id_evento_caso',
-        'sexo',
-        'edad',
-        'residencia_provincia_nombre',
-        'fallecido'
+        'id_evento_caso'
     )
 
-    resultado.collect()
+    resultado.count()
 
     return resultado
 

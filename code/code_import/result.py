@@ -5,7 +5,7 @@ def exportar_metricas(
     execucao,
     metricas
 ):
-    arquivo_saida = f"../result/{nome_arquivo}.txt"
+    arquivo_saida = f"../result_local/{nome_arquivo}.txt"
 
     with open(arquivo_saida, 'a', encoding='utf-8') as f:
 

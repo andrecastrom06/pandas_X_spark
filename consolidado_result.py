@@ -2,102 +2,122 @@ import re
 import os
 import pandas as pd
 
-PASTA_RESULTADOS = "./result"
+pastas = ["local", "distribuidos"]
 
-ARQUIVO_SAIDA = (
-    "./result/benchmark_consolidado.csv"
-)
+for pasta in pastas:
 
-dados = []
+    PASTA_RESULTADOS = f"./result_{pasta}"
 
-# lista txt da pasta
-arquivos_txt = [
-    os.path.join(PASTA_RESULTADOS, arq)
-    for arq in os.listdir(PASTA_RESULTADOS)
-    if arq.endswith(".txt")
-]
-
-for arquivo in arquivos_txt:
-
-    print(f"Lendo: {arquivo}")
-
-    # lê txt
-    with open(arquivo, "r", encoding="utf-8") as f:
-
-        conteudo = f.read()
-
-    # separa blocos
-    blocos = re.split(
-        r"=+",
-        conteudo
+    ARQUIVO_SAIDA = (
+        f"./result_{pasta}/"
+        f"benchmark_consolidado_{pasta}.csv"
     )
 
-    for bloco in blocos:
+    dados = []
 
-        bloco = bloco.strip()
+    if not os.path.exists(PASTA_RESULTADOS):
 
-        if not bloco:
-            continue
+        print(
+            f"Pasta não encontrada: "
+            f"{PASTA_RESULTADOS}"
+        )
 
-        try:
+        continue
 
-            ferramenta = re.search(
-                r"Ferramenta:\s*(.*)",
-                bloco
-            ).group(1).strip()
+    arquivos_txt = [
+        os.path.join(PASTA_RESULTADOS, arq)
+        for arq in os.listdir(PASTA_RESULTADOS)
+        if arq.endswith(".txt")
+    ]
 
-            dataset = re.search(
-                r"Dataset:\s*(.*)",
-                bloco
-            ).group(1).strip()
+    for arquivo in arquivos_txt:
 
-            execucao = re.search(
-                r"Execução:\s*(.*)",
-                bloco
-            ).group(1).strip()
+        print(f"Lendo: {arquivo}")
 
-            tempo_resposta = re.search(
-                r"Tempo de Resposta:\s*(.*)",
-                bloco
-            ).group(1).strip()
+        # pega nome do arquivo sem .txt
+        transformacao = os.path.splitext(
+            os.path.basename(arquivo)
+        )[0]
 
-            tempo_cpu = re.search(
-                r"Tempo de CPU:\s*(.*)",
-                bloco
-            ).group(1).strip()
+        with open(
+            arquivo,
+            "r",
+            encoding="utf-8"
+        ) as f:
 
-            uso_memoria = re.search(
-                r"Uso de Memória:\s*(.*)",
-                bloco
-            ).group(1).strip()
+            conteudo = f.read()
 
-            dados.append({
-                "Ferramenta": ferramenta,
-                "Dataset": dataset,
-                "Execução": execucao,
-                "Tempo de Resposta": tempo_resposta,
-                "Tempo de CPU": tempo_cpu,
-                "Uso de Memória": uso_memoria
-            })
+        blocos = re.split(
+            r"=+",
+            conteudo
+        )
 
-        except Exception as e:
+        for bloco in blocos:
 
-            print(
-                f"Erro ao processar bloco "
-                f"do arquivo {arquivo}"
-            )
+            bloco = bloco.strip()
 
-            print(str(e))
+            if not bloco:
+                continue
 
-# cria dataframe
-df = pd.DataFrame(dados)
+            try:
 
-# salva csv
-df.to_csv(
-    ARQUIVO_SAIDA,
-    index=False
-)
+                ferramenta = re.search(
+                    r"Ferramenta:\s*(.*)",
+                    bloco
+                ).group(1).strip()
 
-print("CSV consolidado criado com sucesso.")
+                dataset = re.search(
+                    r"Dataset:\s*(.*)",
+                    bloco
+                ).group(1).strip()
 
-print(df.head())
+                execucao = re.search(
+                    r"Execução:\s*(.*)",
+                    bloco
+                ).group(1).strip()
+
+                tempo_resposta = re.search(
+                    r"Tempo de Resposta:\s*(.*)",
+                    bloco
+                ).group(1).strip()
+
+                tempo_cpu = re.search(
+                    r"Tempo de CPU:\s*(.*)",
+                    bloco
+                ).group(1).strip()
+
+                uso_memoria = re.search(
+                    r"Uso de Memória:\s*(.*)",
+                    bloco
+                ).group(1).strip()
+
+                dados.append({
+                    "Transformação": transformacao,
+                    "Ferramenta": ferramenta,
+                    "Dataset": dataset,
+                    "Execução": execucao,
+                    "Tempo de Resposta": tempo_resposta,
+                    "Tempo de CPU": tempo_cpu,
+                    "Uso de Memória": uso_memoria
+                })
+
+            except Exception as e:
+
+                print(
+                    f"Erro ao processar bloco "
+                    f"do arquivo {arquivo}"
+                )
+
+                print(str(e))
+
+    df = pd.DataFrame(dados)
+
+    df.to_csv(
+        ARQUIVO_SAIDA,
+        index=False
+    )
+
+    print(
+        f"CSV consolidado criado: "
+        f"{ARQUIVO_SAIDA}"
+    )
