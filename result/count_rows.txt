@@ -4,330 +4,6 @@ Ferramenta: Pandas
 Dataset: covid_2020_2021_200.csv
 Execução: 1
 ------------------------------------------------------------
-Tempo de Resposta: 0.0001 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 431.28 MB
-
-============================================================
-Ferramenta: Pandas
-Dataset: covid_2020_2021_200.csv
-Execução: 2
-------------------------------------------------------------
-Tempo de Resposta: 0.0001 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 462.09 MB
-
-============================================================
-Ferramenta: Pandas
-Dataset: covid_2020_2021_200.csv
-Execução: 3
-------------------------------------------------------------
-Tempo de Resposta: 0.0002 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 462.09 MB
-
-============================================================
-Ferramenta: Pandas
-Dataset: covid_2020_2021_600.csv
-Execução: 1
-------------------------------------------------------------
-Tempo de Resposta: 0.0001 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 1206.65 MB
-
-============================================================
-Ferramenta: Pandas
-Dataset: covid_2020_2021_600.csv
-Execução: 2
-------------------------------------------------------------
-Tempo de Resposta: 0.0002 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 1207.96 MB
-
-============================================================
-Ferramenta: Pandas
-Dataset: covid_2020_2021_600.csv
-Execução: 3
-------------------------------------------------------------
-Tempo de Resposta: 0.0002 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 1210.5 MB
-
-============================================================
-Ferramenta: Pandas
-Dataset: covid_2020_2021_1800.csv
-Execução: 1
-------------------------------------------------------------
-Tempo de Resposta: 0.0003 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 3703.88 MB
-
-============================================================
-Ferramenta: Pandas
-Dataset: covid_2020_2021_1800.csv
-Execução: 2
-------------------------------------------------------------
-Tempo de Resposta: 0.0005 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 3726.02 MB
-
-============================================================
-Ferramenta: Pandas
-Dataset: covid_2020_2021_1800.csv
-Execução: 3
-------------------------------------------------------------
-Tempo de Resposta: 0.0009 s
-Tempo de CPU: 0.01 s
-Uso de Memória: 4123.68 MB
-
-============================================================
-Ferramenta: Spark
-Dataset: covid_2020_2021_200.csv
-Execução: 1
-------------------------------------------------------------
-Tempo de Resposta: 3.9023 s
-Tempo de CPU: 0.01 s
-Uso de Memória: 4123.72 MB
-
-============================================================
-Ferramenta: Spark
-Dataset: covid_2020_2021_200.csv
-Execução: 2
-------------------------------------------------------------
-Tempo de Resposta: 4.1261 s
-Tempo de CPU: 0.01 s
-Uso de Memória: 4123.72 MB
-
-============================================================
-Ferramenta: Spark
-Dataset: covid_2020_2021_200.csv
-Execução: 3
-------------------------------------------------------------
-Tempo de Resposta: 4.2358 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 4123.72 MB
-
-============================================================
-Ferramenta: Spark
-Dataset: covid_2020_2021_600.csv
-Execução: 1
-------------------------------------------------------------
-Tempo de Resposta: 6.0911 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 4123.72 MB
-
-============================================================
-Ferramenta: Spark
-Dataset: covid_2020_2021_600.csv
-Execução: 2
-------------------------------------------------------------
-Tempo de Resposta: 6.6271 s
-Tempo de CPU: 0.01 s
-Uso de Memória: 4123.72 MB
-
-============================================================
-Ferramenta: Spark
-Dataset: covid_2020_2021_600.csv
-Execução: 3
-------------------------------------------------------------
-Tempo de Resposta: 4.2033 s
-Tempo de CPU: 0.01 s
-Uso de Memória: 4123.72 MB
-
-============================================================
-Ferramenta: Spark
-Dataset: covid_2020_2021_1800.csv
-Execução: 1
-------------------------------------------------------------
-Tempo de Resposta: 16.433 s
-Tempo de CPU: 0.01 s
-Uso de Memória: 4123.72 MB
-
-============================================================
-Ferramenta: Spark
-Dataset: covid_2020_2021_1800.csv
-Execução: 2
-------------------------------------------------------------
-Tempo de Resposta: 16.1996 s
-Tempo de CPU: 0.01 s
-Uso de Memória: 4123.72 MB
-
-============================================================
-Ferramenta: Spark
-Dataset: covid_2020_2021_1800.csv
-Execução: 3
-------------------------------------------------------------
-Tempo de Resposta: 12.8895 s
-Tempo de CPU: 0.01 s
-Uso de Memória: 4123.72 MB
-
-============================================================
-Ferramenta: Pandas
-Dataset: covid_2020_2021_200.csv
-Execução: 1
-------------------------------------------------------------
-Tempo de Resposta: 0.0002 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 433.79 MB
-
-============================================================
-Ferramenta: Pandas
-Dataset: covid_2020_2021_200.csv
-Execução: 2
-------------------------------------------------------------
-Tempo de Resposta: 0.0001 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 464.6 MB
-
-============================================================
-Ferramenta: Pandas
-Dataset: covid_2020_2021_200.csv
-Execução: 3
-------------------------------------------------------------
-Tempo de Resposta: 0.0001 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 464.61 MB
-
-============================================================
-Ferramenta: Pandas
-Dataset: covid_2020_2021_600.csv
-Execução: 1
-------------------------------------------------------------
-Tempo de Resposta: 0.0003 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 1209.16 MB
-
-============================================================
-Ferramenta: Pandas
-Dataset: covid_2020_2021_600.csv
-Execução: 2
-------------------------------------------------------------
-Tempo de Resposta: 0.0003 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 1210.42 MB
-
-============================================================
-Ferramenta: Pandas
-Dataset: covid_2020_2021_600.csv
-Execução: 3
-------------------------------------------------------------
-Tempo de Resposta: 0.0002 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 1212.45 MB
-
-============================================================
-Ferramenta: Pandas
-Dataset: covid_2020_2021_1800.csv
-Execução: 1
-------------------------------------------------------------
-Tempo de Resposta: 0.0002 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 3704.83 MB
-
-============================================================
-Ferramenta: Pandas
-Dataset: covid_2020_2021_1800.csv
-Execução: 2
-------------------------------------------------------------
-Tempo de Resposta: 0.0002 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 4125.5 MB
-
-============================================================
-Ferramenta: Pandas
-Dataset: covid_2020_2021_1800.csv
-Execução: 3
-------------------------------------------------------------
-Tempo de Resposta: 0.0004 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 3727.02 MB
-
-============================================================
-Ferramenta: Spark
-Dataset: covid_2020_2021_200.csv
-Execução: 1
-------------------------------------------------------------
-Tempo de Resposta: 8.3137 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 3727.06 MB
-
-============================================================
-Ferramenta: Spark
-Dataset: covid_2020_2021_200.csv
-Execução: 2
-------------------------------------------------------------
-Tempo de Resposta: 3.2602 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 3727.06 MB
-
-============================================================
-Ferramenta: Spark
-Dataset: covid_2020_2021_200.csv
-Execução: 3
-------------------------------------------------------------
-Tempo de Resposta: 3.4649 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 3727.06 MB
-
-============================================================
-Ferramenta: Spark
-Dataset: covid_2020_2021_600.csv
-Execução: 1
-------------------------------------------------------------
-Tempo de Resposta: 4.3556 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 3727.06 MB
-
-============================================================
-Ferramenta: Spark
-Dataset: covid_2020_2021_600.csv
-Execução: 2
-------------------------------------------------------------
-Tempo de Resposta: 4.0463 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 3727.06 MB
-
-============================================================
-Ferramenta: Spark
-Dataset: covid_2020_2021_600.csv
-Execução: 3
-------------------------------------------------------------
-Tempo de Resposta: 3.9257 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 3727.06 MB
-
-============================================================
-Ferramenta: Spark
-Dataset: covid_2020_2021_1800.csv
-Execução: 1
-------------------------------------------------------------
-Tempo de Resposta: 14.3225 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 3727.06 MB
-
-============================================================
-Ferramenta: Spark
-Dataset: covid_2020_2021_1800.csv
-Execução: 2
-------------------------------------------------------------
-Tempo de Resposta: 12.3353 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 3727.06 MB
-
-============================================================
-Ferramenta: Spark
-Dataset: covid_2020_2021_1800.csv
-Execução: 3
-------------------------------------------------------------
-Tempo de Resposta: 13.9043 s
-Tempo de CPU: 0.0 s
-Uso de Memória: 3727.06 MB
-
-============================================================
-Ferramenta: Pandas
-Dataset: covid_2020_2021_200.csv
-Execução: 1
-------------------------------------------------------------
 Tempo de Resposta: 0.0007 s
 Tempo de CPU: 0.0 s
 Uso de Memória: 426.91 MB
@@ -403,6 +79,33 @@ Execução: 3
 Tempo de Resposta: 0.0009 s
 Tempo de CPU: 0.0 s
 Uso de Memória: 4125.13 MB
+
+============================================================
+Ferramenta: Pandas
+Dataset: Covid19Casos.csv
+Execução: 1
+------------------------------------------------------------
+Tempo de Resposta: ERRO
+Tempo de CPU: ERRO
+Uso de Memória: ERRO
+
+============================================================
+Ferramenta: Pandas
+Dataset: Covid19Casos.csv
+Execução: 2
+------------------------------------------------------------
+Tempo de Resposta: ERRO
+Tempo de CPU: ERRO
+Uso de Memória: ERRO
+
+============================================================
+Ferramenta: Pandas
+Dataset: Covid19Casos.csv
+Execução: 3
+------------------------------------------------------------
+Tempo de Resposta: ERRO
+Tempo de CPU: ERRO
+Uso de Memória: ERRO
 
 ============================================================
 Ferramenta: Spark
