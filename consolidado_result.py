@@ -4,6 +4,12 @@ import pandas as pd
 
 pastas = ["local", "distribuidos"]
 
+
+def extrair_campo(bloco, padrao):
+    match = re.search(padrao, bloco)
+    return match.group(1).strip() if match else None
+
+
 for pasta in pastas:
 
     PASTA_RESULTADOS = f"./result_{pasta}"
@@ -34,7 +40,6 @@ for pasta in pastas:
 
         print(f"Lendo: {arquivo}")
 
-        # pega nome do arquivo sem .txt
         transformacao = os.path.splitext(
             os.path.basename(arquivo)
         )[0]
@@ -59,46 +64,51 @@ for pasta in pastas:
             if not bloco:
                 continue
 
+            ferramenta = extrair_campo(
+                bloco,
+                r"Ferramenta:\s*(.*)"
+            )
+
+            if not ferramenta:
+                continue
+
             try:
-
-                ferramenta = re.search(
-                    r"Ferramenta:\s*(.*)",
-                    bloco
-                ).group(1).strip()
-
-                dataset = re.search(
-                    r"Dataset:\s*(.*)",
-                    bloco
-                ).group(1).strip()
-
-                execucao = re.search(
-                    r"Execução:\s*(.*)",
-                    bloco
-                ).group(1).strip()
-
-                tempo_resposta = re.search(
-                    r"Tempo de Resposta:\s*(.*)",
-                    bloco
-                ).group(1).strip()
-
-                tempo_cpu = re.search(
-                    r"Tempo de CPU:\s*(.*)",
-                    bloco
-                ).group(1).strip()
-
-                uso_memoria = re.search(
-                    r"Uso de Memória:\s*(.*)",
-                    bloco
-                ).group(1).strip()
 
                 dados.append({
                     "Transformação": transformacao,
                     "Ferramenta": ferramenta,
-                    "Dataset": dataset,
-                    "Execução": execucao,
-                    "Tempo de Resposta": tempo_resposta,
-                    "Tempo de CPU": tempo_cpu,
-                    "Uso de Memória": uso_memoria
+                    "Dataset": extrair_campo(
+                        bloco,
+                        r"Dataset:\s*(.*)"
+                    ),
+                    "Execução": extrair_campo(
+                        bloco,
+                        r"Execução:\s*(.*)"
+                    ),
+                    "Tempo de Leitura CSV": extrair_campo(
+                        bloco,
+                        r"Tempo de Leitura CSV:\s*(.*)"
+                    ),
+                    "Tempo de Inicialização Spark": extrair_campo(
+                        bloco,
+                        r"Tempo de Inicialização Spark:\s*(.*)"
+                    ),
+                    "Tempo de Resposta": extrair_campo(
+                        bloco,
+                        r"Tempo de Resposta:\s*(.*)"
+                    ),
+                    "Tempo Total": extrair_campo(
+                        bloco,
+                        r"Tempo Total:\s*(.*)"
+                    ),
+                    "Tempo de CPU": extrair_campo(
+                        bloco,
+                        r"Tempo de CPU:\s*(.*)"
+                    ),
+                    "Uso de Memória": extrair_campo(
+                        bloco,
+                        r"Uso de Memória:\s*(.*)"
+                    ),
                 })
 
             except Exception as e:
@@ -119,5 +129,6 @@ for pasta in pastas:
 
     print(
         f"CSV consolidado criado: "
-        f"{ARQUIVO_SAIDA}"
+        f"{ARQUIVO_SAIDA} "
+        f"({len(df)} registros)"
     )

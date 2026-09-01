@@ -1,3 +1,5 @@
+import gc
+
 import pandas as pd
 from pyspark.sql import SparkSession
 
@@ -21,6 +23,8 @@ def _criar_spark():
         .appName("Benchmark") \
         .config("spark.driver.host", "127.0.0.1") \
         .config("spark.driver.bindAddress", "127.0.0.1") \
+        .config("spark.driver.memory", "8g") \
+        .config("spark.executor.memory", "8g") \
         .getOrCreate()
 
     return sessao, fim()
@@ -56,49 +60,55 @@ def _ler_csv_spark(dataset):
 def executar_benchmark(
     nome_arquivo_teste,
     funcao_pandas,
-    funcao_spark
+    funcao_spark,
+    datasets=None,
+    apenas_spark=False
 ):
+    datasets = datasets or DATASETS
 
     exportar_inicializacao_spark(
         nome_arquivo=nome_arquivo_teste,
         tempo_inicializacao=TEMPO_INICIALIZACAO_SPARK
     )
 
-    for dataset in DATASETS:
+    if not apenas_spark:
+        for dataset in datasets:
 
-        for execucao in range(1, NUM_EXECUCOES + 1):
+            for execucao in range(1, NUM_EXECUCOES + 1):
 
-            fim_leitura = medir_tempo()
-            df = pd.read_csv(f"../data/{dataset}")
-            tempo_leitura_csv = fim_leitura()
+                fim_leitura = medir_tempo()
+                df = pd.read_csv(f"../data/{dataset}")
+                tempo_leitura_csv = fim_leitura()
 
-            inicio = capturar_metricas_inicio()
+                inicio = capturar_metricas_inicio()
 
-            funcao_pandas(df)
+                funcao_pandas(df)
 
-            metricas = capturar_metricas_fim(inicio)
-            metricas['tempo_leitura_csv'] = tempo_leitura_csv
-            metricas['tempo_total'] = round(
-                tempo_leitura_csv + metricas['tempo_resposta'],
-                4
-            )
+                metricas = capturar_metricas_fim(inicio)
+                metricas['tempo_leitura_csv'] = tempo_leitura_csv
+                metricas['tempo_total'] = round(
+                    tempo_leitura_csv + metricas['tempo_resposta'],
+                    4
+                )
 
-            exportar_metricas(
-                nome_arquivo=nome_arquivo_teste,
-                ferramenta="Pandas",
-                dataset=dataset,
-                execucao=execucao,
-                metricas=metricas
-            )
+                exportar_metricas(
+                    nome_arquivo=nome_arquivo_teste,
+                    ferramenta="Pandas",
+                    dataset=dataset,
+                    execucao=execucao,
+                    metricas=metricas
+                )
 
-            print(
-                f"[PANDAS] "
-                f"{dataset} "
-                f"Execução {execucao} concluída"
-            )
+                del df
+                gc.collect()
 
+                print(
+                    f"[PANDAS] "
+                    f"{dataset} "
+                    f"Execução {execucao} concluída"
+                )
 
-    for dataset in DATASETS:
+    for dataset in datasets:
 
         for execucao in range(1, NUM_EXECUCOES + 1):
 
@@ -106,7 +116,7 @@ def executar_benchmark(
 
             inicio = capturar_metricas_inicio()
 
-            funcao_spark(df_spark)
+            _ = funcao_spark(df_spark)
 
             metricas = capturar_metricas_fim(inicio)
             metricas['tempo_leitura_csv'] = tempo_leitura_csv
@@ -121,6 +131,8 @@ def executar_benchmark(
             )
 
             df_spark.unpersist()
+            spark.catalog.clearCache()
+            gc.collect()
 
             exportar_metricas(
                 nome_arquivo=nome_arquivo_teste,

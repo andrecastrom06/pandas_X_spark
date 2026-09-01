@@ -49,8 +49,9 @@ def join_spark(df):
     return resultado
 
 
-executar_benchmark(
-    nome_arquivo_teste="join",
-    funcao_pandas=join_pandas,
-    funcao_spark=join_spark
-)
+if __name__ == "__main__":
+    executar_benchmark(
+        nome_arquivo_teste="join",
+        funcao_pandas=join_pandas,
+        funcao_spark=join_spark
+    )
