@@ -2,6 +2,16 @@ import time
 import psutil
 import os
 
+
+def medir_tempo():
+    inicio = time.time()
+
+    def fim():
+        return round(time.time() - inicio, 4)
+
+    return fim
+
+
 def capturar_metricas_inicio():
     processo = psutil.Process(os.getpid())
 
