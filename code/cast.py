@@ -44,7 +44,7 @@ def cast_spark(df):
         col('residencia_provincia_nombre').cast(StringType())
     )
 
-    df.printSchema()
+    df.count()
 
     return df
 
