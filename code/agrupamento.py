@@ -50,7 +50,7 @@ def groupby_spark(df):
         )
     )
 
-    resumo.collect()
+    resumo.count()
 
     return resumo
 
