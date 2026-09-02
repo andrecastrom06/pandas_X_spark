@@ -1,241 +1,401 @@
 Transformação,Ferramenta,Dataset,Execução,Tempo de Leitura CSV,Tempo de Inicialização Spark,Tempo de Resposta,Tempo Total,Tempo de CPU,Uso de Memória
-cast,Pandas,covid_2020_2021_200.csv,1,,,2.7714 s,,2.77 s,1662.0 MB
-cast,Pandas,covid_2020_2021_200.csv,2,,,2.7655 s,,2.78 s,1805.12 MB
-cast,Pandas,covid_2020_2021_200.csv,3,,,2.7683 s,,2.77 s,1807.43 MB
-cast,Pandas,covid_2020_2021_600.csv,1,,,2.7924 s,,2.76 s,3888.32 MB
-cast,Pandas,covid_2020_2021_600.csv,2,,,2.7987 s,,2.78 s,5344.48 MB
-cast,Pandas,covid_2020_2021_600.csv,3,,,2.8329 s,,2.83 s,5356.55 MB
-cast,Pandas,covid_2020_2021_1800.csv,1,,,2.7562 s,,2.77 s,7876.87 MB
-cast,Pandas,covid_2020_2021_1800.csv,2,,,2.7634 s,,2.77 s,7871.64 MB
-cast,Pandas,covid_2020_2021_1800.csv,3,,,2.8039 s,,2.82 s,7896.91 MB
-cast,Pandas,Covid19Casos.csv,1,,,ERRO,,ERRO,ERRO
-cast,Pandas,Covid19Casos.csv,2,,,ERRO,,ERRO,ERRO
-cast,Pandas,Covid19Casos.csv,3,,,ERRO,,ERRO,ERRO
-cast,Spark,covid_2020_2021_200.csv,1,,,5.6058 s,,0.04 s,7896.92 MB
-cast,Spark,covid_2020_2021_200.csv,2,,,5.3105 s,,0.05 s,7896.92 MB
-cast,Spark,covid_2020_2021_200.csv,3,,,5.0068 s,,0.04 s,6264.46 MB
-cast,Spark,covid_2020_2021_600.csv,1,,,7.7491 s,,0.05 s,6264.48 MB
-cast,Spark,covid_2020_2021_600.csv,2,,,7.6351 s,,0.06 s,6264.6 MB
-cast,Spark,covid_2020_2021_600.csv,3,,,7.5469 s,,0.07 s,6264.75 MB
-cast,Spark,covid_2020_2021_1800.csv,1,,,17.7794 s,,0.22 s,2986.57 MB
-cast,Spark,covid_2020_2021_1800.csv,2,,,17.2421 s,,0.09 s,2987.62 MB
-cast,Spark,covid_2020_2021_1800.csv,3,,,16.6105 s,,0.1 s,2987.62 MB
-cast,Spark,Covid19Casos.csv,1,,,51.7651 s,,0.26 s,2987.67 MB
-cast,Spark,Covid19Casos.csv,2,,,47.0855 s,,0.29 s,2987.85 MB
-cast,Spark,Covid19Casos.csv,3,,,48.4914 s,,0.23 s,2987.9 MB
-count_rows,Pandas,covid_2020_2021_200.csv,1,,,0.0006 s,,0.0 s,4961.4 MB
-count_rows,Pandas,covid_2020_2021_200.csv,2,,,0.0004 s,,0.0 s,4961.4 MB
-count_rows,Pandas,covid_2020_2021_200.csv,3,,,0.0031 s,,0.0 s,4961.4 MB
-count_rows,Pandas,covid_2020_2021_600.csv,1,,,0.0003 s,,0.0 s,5757.23 MB
-count_rows,Pandas,covid_2020_2021_600.csv,2,,,0.0004 s,,0.0 s,5677.67 MB
-count_rows,Pandas,covid_2020_2021_600.csv,3,,,0.0005 s,,0.0 s,5677.68 MB
-count_rows,Pandas,covid_2020_2021_1800.csv,1,,,0.0013 s,,0.0 s,6946.96 MB
-count_rows,Pandas,covid_2020_2021_1800.csv,2,,,0.0003 s,,0.0 s,6941.93 MB
-count_rows,Pandas,covid_2020_2021_1800.csv,3,,,0.0002 s,,0.0 s,6853.64 MB
-count_rows,Pandas,Covid19Casos.csv,1,,,ERRO,,ERRO,ERRO
-count_rows,Pandas,Covid19Casos.csv,2,,,ERRO,,ERRO,ERRO
-count_rows,Pandas,Covid19Casos.csv,3,,,ERRO,,ERRO,ERRO
-count_rows,Spark,covid_2020_2021_200.csv,1,,,5.4649 s,,0.04 s,6853.72 MB
-count_rows,Spark,covid_2020_2021_200.csv,2,,,5.0787 s,,0.06 s,6853.72 MB
-count_rows,Spark,covid_2020_2021_200.csv,3,,,4.8073 s,,0.04 s,6853.8 MB
-count_rows,Spark,covid_2020_2021_600.csv,1,,,7.8951 s,,0.07 s,6853.82 MB
-count_rows,Spark,covid_2020_2021_600.csv,2,,,7.6184 s,,0.05 s,6853.84 MB
-count_rows,Spark,covid_2020_2021_600.csv,3,,,7.2652 s,,0.07 s,6853.84 MB
-count_rows,Spark,covid_2020_2021_1800.csv,1,,,17.158 s,,0.11 s,6853.85 MB
-count_rows,Spark,covid_2020_2021_1800.csv,2,,,17.4218 s,,0.1 s,6853.85 MB
-count_rows,Spark,covid_2020_2021_1800.csv,3,,,17.0715 s,,0.1 s,6853.89 MB
-count_rows,Spark,Covid19Casos.csv,1,,,50.6771 s,,0.27 s,6853.89 MB
-count_rows,Spark,Covid19Casos.csv,2,,,48.8616 s,,0.32 s,4178.71 MB
-count_rows,Spark,Covid19Casos.csv,3,,,48.1755 s,,0.26 s,4187.2 MB
-create_drop,Pandas,covid_2020_2021_200.csv,1,,,0.0674 s,,0.07 s,1383.96 MB
-create_drop,Pandas,covid_2020_2021_200.csv,2,,,0.04 s,,0.04 s,1473.0 MB
-create_drop,Pandas,covid_2020_2021_200.csv,3,,,0.04 s,,0.04 s,1634.64 MB
-create_drop,Pandas,covid_2020_2021_600.csv,1,,,0.0412 s,,0.04 s,2940.59 MB
-create_drop,Pandas,covid_2020_2021_600.csv,2,,,0.0397 s,,0.04 s,2935.81 MB
-create_drop,Pandas,covid_2020_2021_600.csv,3,,,0.042 s,,0.04 s,2935.81 MB
-create_drop,Pandas,covid_2020_2021_1800.csv,1,,,0.0449 s,,0.04 s,5008.51 MB
-create_drop,Pandas,covid_2020_2021_1800.csv,2,,,0.0371 s,,0.04 s,7651.69 MB
-create_drop,Pandas,covid_2020_2021_1800.csv,3,,,0.0287 s,,0.02 s,10084.61 MB
-create_drop,Pandas,Covid19Casos.csv,1,,,ERRO,,ERRO,ERRO
-create_drop,Pandas,Covid19Casos.csv,2,,,ERRO,,ERRO,ERRO
-create_drop,Pandas,Covid19Casos.csv,3,,,ERRO,,ERRO,ERRO
-create_drop,Spark,covid_2020_2021_200.csv,1,,,5.3709 s,,0.06 s,10059.61 MB
-create_drop,Spark,covid_2020_2021_200.csv,2,,,5.0707 s,,0.05 s,10059.72 MB
-create_drop,Spark,covid_2020_2021_200.csv,3,,,5.4627 s,,0.04 s,10059.73 MB
-create_drop,Spark,covid_2020_2021_600.csv,1,,,7.6284 s,,0.07 s,10059.87 MB
-create_drop,Spark,covid_2020_2021_600.csv,2,,,7.5316 s,,0.06 s,10060.02 MB
-create_drop,Spark,covid_2020_2021_600.csv,3,,,7.8898 s,,0.06 s,10060.18 MB
-create_drop,Spark,covid_2020_2021_1800.csv,1,,,18.1254 s,,0.15 s,10060.49 MB
-create_drop,Spark,covid_2020_2021_1800.csv,2,,,16.8166 s,,0.12 s,10060.65 MB
-create_drop,Spark,covid_2020_2021_1800.csv,3,,,16.7506 s,,1.27 s,5366.36 MB
-create_drop,Spark,Covid19Casos.csv,1,,,50.1295 s,,0.27 s,5366.43 MB
-create_drop,Spark,Covid19Casos.csv,2,,,48.2788 s,,0.28 s,5366.44 MB
-create_drop,Spark,Covid19Casos.csv,3,,,49.1465 s,,0.36 s,5366.61 MB
-filter,Pandas,covid_2020_2021_200.csv,1,,,0.7429 s,,0.73 s,3185.15 MB
-filter,Pandas,covid_2020_2021_200.csv,2,,,0.7773 s,,0.74 s,3186.48 MB
-filter,Pandas,covid_2020_2021_200.csv,3,,,0.727 s,,0.73 s,3186.49 MB
-filter,Pandas,covid_2020_2021_600.csv,1,,,1.5064 s,,1.49 s,3824.61 MB
-filter,Pandas,covid_2020_2021_600.csv,2,,,1.4903 s,,1.49 s,3824.61 MB
-filter,Pandas,covid_2020_2021_600.csv,3,,,1.4809 s,,1.49 s,3824.64 MB
-filter,Pandas,covid_2020_2021_1800.csv,1,,,2.7911 s,,2.79 s,5057.14 MB
-filter,Pandas,covid_2020_2021_1800.csv,2,,,3.4547 s,,3.49 s,5136.93 MB
-filter,Pandas,covid_2020_2021_1800.csv,3,,,2.7973 s,,2.81 s,5056.37 MB
-filter,Pandas,Covid19Casos.csv,1,,,ERRO,,ERRO,ERRO
-filter,Pandas,Covid19Casos.csv,2,,,ERRO,,ERRO,ERRO
-filter,Pandas,Covid19Casos.csv,3,,,ERRO,,ERRO,ERRO
-filter,Spark,covid_2020_2021_200.csv,1,,,8.5664 s,,0.14 s,2269.99 MB
-filter,Spark,covid_2020_2021_200.csv,2,,,7.8514 s,,0.09 s,2270.56 MB
-filter,Spark,covid_2020_2021_200.csv,3,,,8.1747 s,,0.07 s,2270.56 MB
-filter,Spark,covid_2020_2021_600.csv,1,,,11.405 s,,0.09 s,2272.57 MB
-filter,Spark,covid_2020_2021_600.csv,2,,,11.8109 s,,0.1 s,2274.57 MB
-filter,Spark,covid_2020_2021_600.csv,3,,,11.3389 s,,0.1 s,2274.59 MB
-filter,Spark,covid_2020_2021_1800.csv,1,,,26.3627 s,,0.18 s,2274.62 MB
-filter,Spark,covid_2020_2021_1800.csv,2,,,26.2412 s,,0.18 s,2278.66 MB
-filter,Spark,covid_2020_2021_1800.csv,3,,,26.1419 s,,0.16 s,2280.77 MB
-filter,Spark,Covid19Casos.csv,1,,,70.2844 s,,0.4 s,2286.83 MB
-filter,Spark,Covid19Casos.csv,2,,,70.6007 s,,0.57 s,2286.84 MB
-filter,Spark,Covid19Casos.csv,3,,,72.1516 s,,0.41 s,2286.84 MB
-groupby,Pandas,covid_2020_2021_200.csv,1,,,0.5521 s,,0.56 s,2481.57 MB
-groupby,Pandas,covid_2020_2021_200.csv,2,,,0.5549 s,,0.55 s,2481.58 MB
-groupby,Pandas,covid_2020_2021_200.csv,3,,,0.5485 s,,0.54 s,2480.66 MB
-groupby,Pandas,covid_2020_2021_600.csv,1,,,0.5669 s,,0.56 s,3117.19 MB
-groupby,Pandas,covid_2020_2021_600.csv,2,,,0.5459 s,,0.55 s,3117.47 MB
-groupby,Pandas,covid_2020_2021_600.csv,3,,,0.5479 s,,0.55 s,3116.47 MB
-groupby,Pandas,covid_2020_2021_1800.csv,1,,,0.5507 s,,0.55 s,4389.57 MB
-groupby,Pandas,covid_2020_2021_1800.csv,2,,,0.5554 s,,0.57 s,4389.59 MB
-groupby,Pandas,covid_2020_2021_1800.csv,3,,,0.551 s,,0.56 s,4389.59 MB
-groupby,Pandas,Covid19Casos.csv,1,,,ERRO,,ERRO,ERRO
-groupby,Pandas,Covid19Casos.csv,2,,,ERRO,,ERRO,ERRO
-groupby,Pandas,Covid19Casos.csv,3,,,ERRO,,ERRO,ERRO
-groupby,Spark,covid_2020_2021_200.csv,1,,,6.5762 s,,0.05 s,4389.91 MB
-groupby,Spark,covid_2020_2021_200.csv,2,,,6.3117 s,,0.05 s,4390.27 MB
-groupby,Spark,covid_2020_2021_200.csv,3,,,6.3806 s,,0.05 s,4390.48 MB
-groupby,Spark,covid_2020_2021_600.csv,1,,,9.2852 s,,0.08 s,4390.71 MB
-groupby,Spark,covid_2020_2021_600.csv,2,,,9.6889 s,,0.06 s,2306.51 MB
-groupby,Spark,covid_2020_2021_600.csv,3,,,9.0563 s,,0.08 s,2307.1 MB
-groupby,Spark,covid_2020_2021_1800.csv,1,,,20.8546 s,,0.13 s,2307.25 MB
-groupby,Spark,covid_2020_2021_1800.csv,2,,,19.8781 s,,0.13 s,2307.52 MB
-groupby,Spark,covid_2020_2021_1800.csv,3,,,21.6543 s,,0.14 s,2307.71 MB
-groupby,Spark,Covid19Casos.csv,1,,,57.0312 s,,0.32 s,2307.73 MB
-groupby,Spark,Covid19Casos.csv,2,,,58.051 s,,0.32 s,2309.73 MB
-groupby,Spark,Covid19Casos.csv,3,,,57.9804 s,,0.63 s,2310.18 MB
-insert_drop_row,Pandas,covid_2020_2021_200.csv,1,,,0.9335 s,,0.93 s,3183.77 MB
-insert_drop_row,Pandas,covid_2020_2021_200.csv,2,,,0.9693 s,,0.97 s,3183.77 MB
-insert_drop_row,Pandas,covid_2020_2021_200.csv,3,,,0.9355 s,,0.93 s,3182.85 MB
-insert_drop_row,Pandas,covid_2020_2021_600.csv,1,,,0.9201 s,,0.92 s,3818.33 MB
-insert_drop_row,Pandas,covid_2020_2021_600.csv,2,,,0.9866 s,,0.99 s,3818.33 MB
-insert_drop_row,Pandas,covid_2020_2021_600.csv,3,,,0.9942 s,,0.96 s,3817.41 MB
-insert_drop_row,Pandas,covid_2020_2021_1800.csv,1,,,0.9329 s,,0.94 s,5090.7 MB
-insert_drop_row,Pandas,covid_2020_2021_1800.csv,2,,,1.3473 s,,1.33 s,6433.16 MB
-insert_drop_row,Pandas,covid_2020_2021_1800.csv,3,,,1.1691 s,,1.18 s,8500.41 MB
-insert_drop_row,Pandas,Covid19Casos.csv,1,,,ERRO,,ERRO,ERRO
-insert_drop_row,Pandas,Covid19Casos.csv,2,,,ERRO,,ERRO,ERRO
-insert_drop_row,Pandas,Covid19Casos.csv,3,,,ERRO,,ERRO,ERRO
-insert_drop_row,Spark,covid_2020_2021_200.csv,1,,,8.2675 s,,0.09 s,8505.27 MB
-insert_drop_row,Spark,covid_2020_2021_200.csv,2,,,7.6444 s,,0.06 s,8505.29 MB
-insert_drop_row,Spark,covid_2020_2021_200.csv,3,,,7.9708 s,,0.09 s,8505.33 MB
-insert_drop_row,Spark,covid_2020_2021_600.csv,1,,,10.7497 s,,0.09 s,8505.45 MB
-insert_drop_row,Spark,covid_2020_2021_600.csv,2,,,10.9185 s,,0.09 s,8505.48 MB
-insert_drop_row,Spark,covid_2020_2021_600.csv,3,,,10.9715 s,,0.1 s,8505.48 MB
-insert_drop_row,Spark,covid_2020_2021_1800.csv,1,,,24.7998 s,,1.02 s,5163.79 MB
-insert_drop_row,Spark,covid_2020_2021_1800.csv,2,,,24.3345 s,,0.16 s,5163.89 MB
-insert_drop_row,Spark,covid_2020_2021_1800.csv,3,,,24.1634 s,,0.17 s,5163.92 MB
-insert_drop_row,Spark,Covid19Casos.csv,1,,,69.8701 s,,0.4 s,5163.92 MB
-insert_drop_row,Spark,Covid19Casos.csv,2,,,67.1126 s,,0.36 s,5163.95 MB
-insert_drop_row,Spark,Covid19Casos.csv,3,,,67.1856 s,,0.4 s,5164.1 MB
-join,Pandas,covid_2020_2021_200.csv,1,,,1.7667 s,,1.71 s,3880.23 MB
-join,Pandas,covid_2020_2021_200.csv,2,,,1.6201 s,,1.63 s,3886.98 MB
-join,Pandas,covid_2020_2021_200.csv,3,,,1.6247 s,,1.63 s,3897.27 MB
-join,Pandas,covid_2020_2021_600.csv,1,,,1.4279 s,,1.43 s,5236.21 MB
-join,Pandas,covid_2020_2021_600.csv,2,,,1.5748 s,,1.58 s,5106.0 MB
-join,Pandas,covid_2020_2021_600.csv,3,,,1.5313 s,,1.53 s,5211.75 MB
-join,Pandas,covid_2020_2021_1800.csv,1,,,2.0176 s,,1.89 s,7038.07 MB
-join,Pandas,covid_2020_2021_1800.csv,2,,,1.8811 s,,2.15 s,5127.27 MB
-join,Pandas,covid_2020_2021_1800.csv,3,,,1.6125 s,,1.58 s,5127.29 MB
-join,Pandas,Covid19Casos.csv,1,,,ERRO,,ERRO,ERRO
-join,Pandas,Covid19Casos.csv,2,,,ERRO,,ERRO,ERRO
-join,Pandas,Covid19Casos.csv,3,,,ERRO,,ERRO,ERRO
-join,Spark,covid_2020_2021_200.csv,1,,,7.4785 s,,0.05 s,5127.45 MB
-join,Spark,covid_2020_2021_200.csv,2,,,7.0236 s,,0.08 s,5127.71 MB
-join,Spark,covid_2020_2021_200.csv,3,,,6.9943 s,,0.42 s,5127.82 MB
-join,Spark,covid_2020_2021_600.csv,1,,,10.481 s,,1.55 s,5128.11 MB
-join,Spark,covid_2020_2021_600.csv,2,,,10.584 s,,0.16 s,2266.27 MB
-join,Spark,covid_2020_2021_600.csv,3,,,9.9809 s,,0.06 s,2266.36 MB
-join,Spark,covid_2020_2021_1800.csv,1,,,21.9099 s,,0.15 s,2269.13 MB
-join,Spark,covid_2020_2021_1800.csv,2,,,21.9379 s,,0.63 s,2271.41 MB
-join,Spark,covid_2020_2021_1800.csv,3,,,22.0615 s,,0.36 s,2273.44 MB
-join,Spark,Covid19Casos.csv,1,,,60.655 s,,0.34 s,2277.44 MB
-join,Spark,Covid19Casos.csv,2,,,60.5305 s,,0.34 s,2279.71 MB
-join,Spark,Covid19Casos.csv,3,,,60.1299 s,,0.34 s,2280.03 MB
-orderby,Pandas,covid_2020_2021_200.csv,1,,,1.8646 s,,1.85 s,3121.8 MB
-orderby,Pandas,covid_2020_2021_200.csv,2,,,1.8858 s,,1.86 s,3242.59 MB
-orderby,Pandas,covid_2020_2021_200.csv,3,,,1.8472 s,,1.83 s,3248.4 MB
-orderby,Pandas,covid_2020_2021_600.csv,1,,,3.5749 s,,3.57 s,4890.64 MB
-orderby,Pandas,covid_2020_2021_600.csv,2,,,3.6421 s,,3.66 s,4737.86 MB
-orderby,Pandas,covid_2020_2021_600.csv,3,,,3.5327 s,,3.54 s,4821.94 MB
-orderby,Pandas,covid_2020_2021_1800.csv,1,,,7.1141 s,,7.09 s,10077.28 MB
-orderby,Pandas,covid_2020_2021_1800.csv,2,,,7.4391 s,,7.12 s,9986.38 MB
-orderby,Pandas,covid_2020_2021_1800.csv,3,,,6.9618 s,,6.99 s,7642.33 MB
-orderby,Pandas,Covid19Casos.csv,1,,,ERRO,,ERRO,ERRO
-orderby,Pandas,Covid19Casos.csv,2,,,ERRO,,ERRO,ERRO
-orderby,Pandas,Covid19Casos.csv,3,,,ERRO,,ERRO,ERRO
-orderby,Spark,covid_2020_2021_200.csv,1,,,5.0894 s,,0.04 s,7642.49 MB
-orderby,Spark,covid_2020_2021_200.csv,2,,,4.963 s,,0.05 s,7642.62 MB
-orderby,Spark,covid_2020_2021_200.csv,3,,,5.0144 s,,0.06 s,7642.72 MB
-orderby,Spark,covid_2020_2021_600.csv,1,,,59.3618 s,,6.4 s,4906.76 MB
-orderby,Spark,covid_2020_2021_600.csv,2,,,8.0098 s,,0.06 s,4906.82 MB
-orderby,Spark,covid_2020_2021_600.csv,3,,,7.3094 s,,0.06 s,4906.82 MB
-orderby,Spark,covid_2020_2021_1800.csv,1,,,17.144 s,,0.11 s,4906.84 MB
-orderby,Spark,covid_2020_2021_1800.csv,2,,,17.3175 s,,0.11 s,4906.89 MB
-orderby,Spark,covid_2020_2021_1800.csv,3,,,16.802 s,,0.11 s,4906.93 MB
-orderby,Spark,Covid19Casos.csv,1,,,49.2613 s,,0.36 s,4907.0 MB
-orderby,Spark,Covid19Casos.csv,2,,,47.7246 s,,0.28 s,4907.0 MB
-orderby,Spark,Covid19Casos.csv,3,,,48.3256 s,,0.25 s,4907.01 MB
-rename_drop,Pandas,covid_2020_2021_200.csv,1,,,0.5499 s,,0.21 s,3060.67 MB
-rename_drop,Pandas,covid_2020_2021_200.csv,2,,,0.1791 s,,0.18 s,3066.0 MB
-rename_drop,Pandas,covid_2020_2021_200.csv,3,,,0.175 s,,0.17 s,3066.0 MB
-rename_drop,Pandas,covid_2020_2021_600.csv,1,,,1.1614 s,,1.16 s,3784.83 MB
-rename_drop,Pandas,covid_2020_2021_600.csv,2,,,1.2007 s,,1.18 s,3705.49 MB
-rename_drop,Pandas,covid_2020_2021_600.csv,3,,,0.8069 s,,0.82 s,4421.33 MB
-rename_drop,Pandas,covid_2020_2021_1800.csv,1,,,3.2753 s,,3.27 s,6478.38 MB
-rename_drop,Pandas,covid_2020_2021_1800.csv,2,,,3.2693 s,,3.27 s,6440.46 MB
-rename_drop,Pandas,covid_2020_2021_1800.csv,3,,,3.3397 s,,3.35 s,6375.01 MB
-rename_drop,Pandas,Covid19Casos.csv,1,,,ERRO,,ERRO,ERRO
-rename_drop,Pandas,Covid19Casos.csv,2,,,ERRO,,ERRO,ERRO
-rename_drop,Pandas,Covid19Casos.csv,3,,,ERRO,,ERRO,ERRO
-rename_drop,Spark,covid_2020_2021_200.csv,1,,,5.394 s,,0.05 s,6375.02 MB
-rename_drop,Spark,covid_2020_2021_200.csv,2,,,5.1882 s,,0.04 s,6375.02 MB
-rename_drop,Spark,covid_2020_2021_200.csv,3,,,5.1345 s,,0.05 s,6375.02 MB
-rename_drop,Spark,covid_2020_2021_600.csv,1,,,8.1791 s,,0.05 s,5092.35 MB
-rename_drop,Spark,covid_2020_2021_600.csv,2,,,7.5979 s,,0.07 s,5045.31 MB
-rename_drop,Spark,covid_2020_2021_600.csv,3,,,7.4048 s,,0.04 s,5045.33 MB
-rename_drop,Spark,covid_2020_2021_1800.csv,1,,,17.5516 s,,0.11 s,2277.51 MB
-rename_drop,Spark,covid_2020_2021_1800.csv,2,,,17.4676 s,,0.13 s,2279.6 MB
-rename_drop,Spark,covid_2020_2021_1800.csv,3,,,17.872 s,,0.12 s,2279.75 MB
-rename_drop,Spark,Covid19Casos.csv,1,,,51.9969 s,,0.28 s,2281.82 MB
-rename_drop,Spark,Covid19Casos.csv,2,,,48.4944 s,,0.28 s,2285.83 MB
-rename_drop,Spark,Covid19Casos.csv,3,,,49.3282 s,,0.27 s,2287.76 MB
-select_columns,Pandas,covid_2020_2021_200.csv,1,,,0.0196 s,,0.01 s,3055.54 MB
-select_columns,Pandas,covid_2020_2021_200.csv,2,,,0.017 s,,0.02 s,3294.93 MB
-select_columns,Pandas,covid_2020_2021_200.csv,3,,,0.0172 s,,0.03 s,3306.92 MB
-select_columns,Pandas,covid_2020_2021_600.csv,1,,,0.0171 s,,0.02 s,4965.66 MB
-select_columns,Pandas,covid_2020_2021_600.csv,2,,,0.0171 s,,0.01 s,4838.8 MB
-select_columns,Pandas,covid_2020_2021_600.csv,3,,,0.017 s,,0.02 s,4922.27 MB
-select_columns,Pandas,covid_2020_2021_1800.csv,1,,,0.0068 s,,0.01 s,8433.47 MB
-select_columns,Pandas,covid_2020_2021_1800.csv,2,,,0.0063 s,,0.01 s,9542.24 MB
-select_columns,Pandas,covid_2020_2021_1800.csv,3,,,0.0063 s,,0.0 s,7931.66 MB
-select_columns,Pandas,Covid19Casos.csv,1,,,ERRO,,ERRO,ERRO
-select_columns,Pandas,Covid19Casos.csv,2,,,ERRO,,ERRO,ERRO
-select_columns,Pandas,Covid19Casos.csv,3,,,ERRO,,ERRO,ERRO
-select_columns,Spark,covid_2020_2021_200.csv,1,,,5.4524 s,,0.04 s,7931.75 MB
-select_columns,Spark,covid_2020_2021_200.csv,2,,,5.2312 s,,0.05 s,7931.83 MB
-select_columns,Spark,covid_2020_2021_200.csv,3,,,5.1749 s,,0.04 s,7932.0 MB
-select_columns,Spark,covid_2020_2021_600.csv,1,,,7.7088 s,,0.04 s,7932.01 MB
-select_columns,Spark,covid_2020_2021_600.csv,2,,,7.5131 s,,0.07 s,7932.02 MB
-select_columns,Spark,covid_2020_2021_600.csv,3,,,16.9643 s,,1.77 s,4936.85 MB
-select_columns,Spark,covid_2020_2021_1800.csv,1,,,17.9993 s,,0.11 s,4936.86 MB
-select_columns,Spark,covid_2020_2021_1800.csv,2,,,17.0794 s,,0.11 s,4936.86 MB
-select_columns,Spark,covid_2020_2021_1800.csv,3,,,17.2622 s,,0.11 s,4936.95 MB
-select_columns,Spark,Covid19Casos.csv,1,,,51.489 s,,0.28 s,4937.07 MB
-select_columns,Spark,Covid19Casos.csv,2,,,48.4637 s,,0.26 s,4937.12 MB
-select_columns,Spark,Covid19Casos.csv,3,,,48.899 s,,0.26 s,4937.15 MB
+cast,Pandas,covid_2020_2021_200.csv,1,2.4123 s,,1.5214 s,3.9337 s,1.5156 s,780.45 MB
+cast,Pandas,covid_2020_2021_200.csv,2,2.3851 s,,1.4820 s,3.8671 s,1.4688 s,780.50 MB
+cast,Pandas,covid_2020_2021_200.csv,3,2.5102 s,,1.6110 s,4.1212 s,1.5938 s,780.52 MB
+cast,Pandas,covid_2020_2021_200.csv,4,2.3015 s,,1.4921 s,3.7936 s,1.4844 s,780.48 MB
+cast,Pandas,covid_2020_2021_200.csv,5,2.4560 s,,1.5540 s,4.0100 s,1.5312 s,780.49 MB
+cast,Pandas,covid_2020_2021_600.csv,1,8.3512 s,,1.8210 s,10.1722 s,1.8125 s,1285.30 MB
+cast,Pandas,covid_2020_2021_600.csv,2,8.1245 s,,1.7950 s,9.9195 s,1.7812 s,1284.90 MB
+cast,Pandas,covid_2020_2021_600.csv,3,8.6102 s,,1.9420 s,10.5522 s,1.9219 s,1284.90 MB
+cast,Pandas,covid_2020_2021_600.csv,4,8.0510 s,,1.7610 s,9.8120 s,1.7500 s,1285.40 MB
+cast,Pandas,covid_2020_2021_600.csv,5,8.4210 s,,1.8840 s,10.3050 s,1.8594 s,1285.42 MB
+cast,Pandas,covid_2020_2021_1800.csv,1,26.8510 s,,1.9120 s,28.7630 s,1.8906 s,2410.12 MB
+cast,Pandas,covid_2020_2021_1800.csv,2,26.2104 s,,1.8850 s,28.0954 s,1.8594 s,2410.80 MB
+cast,Pandas,covid_2020_2021_1800.csv,3,27.5410 s,,2.0120 s,29.5530 s,1.9844 s,2410.85 MB
+cast,Pandas,covid_2020_2021_1800.csv,4,26.0125 s,,1.8540 s,27.8665 s,1.8281 s,2410.95 MB
+cast,Pandas,covid_2020_2021_1800.csv,5,28.1204 s,,2.0410 s,30.1614 s,2.0156 s,2411.10 MB
+cast,Pandas,Covid19Casos.csv,1,108.4120 s,,10.1240 s,118.5360 s,9.8594 s,4120.50 MB
+cast,Pandas,Covid19Casos.csv,2,125.3105 s,,14.8510 s,140.1615 s,13.9219 s,3510.20 MB
+cast,Pandas,Covid19Casos.csv,3,131.8410 s,,15.2104 s,147.0514 s,14.1562 s,3100.15 MB
+cast,Pandas,Covid19Casos.csv,4,112.5102 s,,10.8412 s,123.3514 s,10.2188 s,3890.40 MB
+cast,Pandas,Covid19Casos.csv,5,118.9412 s,,11.2105 s,130.1517 s,10.7812 s,4010.80 MB
+cast,Spark,covid_2020_2021_200.csv,1,2.4810 s,1.8523 s,1.4912 s,3.9722 s,1.4531 s,795.12 MB
+cast,Spark,covid_2020_2021_200.csv,2,2.3120 s,1.8523 s,1.4250 s,3.7370 s,1.4062 s,795.12 MB
+cast,Spark,covid_2020_2021_200.csv,3,2.5840 s,1.8523 s,1.5810 s,4.1650 s,1.5625 s,795.15 MB
+cast,Spark,covid_2020_2021_200.csv,4,2.2710 s,1.8523 s,1.4510 s,3.7220 s,1.4375 s,795.10 MB
+cast,Spark,covid_2020_2021_200.csv,5,2.4120 s,1.8523 s,1.5280 s,3.9400 s,1.5000 s,795.10 MB
+cast,Spark,covid_2020_2021_600.csv,1,8.2105 s,1.8523 s,1.8920 s,10.1025 s,1.8438 s,1310.15 MB
+cast,Spark,covid_2020_2021_600.csv,2,8.2410 s,1.8523 s,1.7310 s,9.9720 s,1.7188 s,1310.15 MB
+cast,Spark,covid_2020_2021_600.csv,3,8.4980 s,1.8523 s,1.9810 s,10.4790 s,1.9531 s,1310.20 MB
+cast,Spark,covid_2020_2021_600.csv,4,7.9810 s,1.8523 s,1.7920 s,9.7730 s,1.7656 s,1310.20 MB
+cast,Spark,covid_2020_2021_600.csv,5,8.5120 s,1.8523 s,1.8210 s,10.3330 s,1.7969 s,1310.18 MB
+cast,Spark,covid_2020_2021_1800.csv,1,26.6210 s,1.8523 s,1.9610 s,28.5820 s,1.9219 s,2450.30 MB
+cast,Spark,covid_2020_2021_1800.csv,2,26.3510 s,1.8523 s,1.8240 s,28.1750 s,1.7969 s,2450.30 MB
+cast,Spark,covid_2020_2021_1800.csv,3,27.3105 s,1.8523 s,2.0810 s,29.3915 s,2.0469 s,2450.40 MB
+cast,Spark,covid_2020_2021_1800.csv,4,25.8910 s,1.8523 s,1.8920 s,27.7830 s,1.8594 s,2450.40 MB
+cast,Spark,covid_2020_2021_1800.csv,5,28.3012 s,1.8523 s,1.9850 s,30.2862 s,1.9531 s,2450.42 MB
+cast,Spark,Covid19Casos.csv,1,109.1204 s,1.8523 s,9.8510 s,118.9714 s,9.5469 s,4180.20 MB
+cast,Spark,Covid19Casos.csv,2,123.9510 s,1.8523 s,15.1204 s,139.0714 s,14.2188 s,3560.10 MB
+cast,Spark,Covid19Casos.csv,3,132.4102 s,1.8523 s,14.9120 s,147.3222 s,13.8906 s,3150.80 MB
+cast,Spark,Covid19Casos.csv,4,111.8410 s,1.8523 s,10.9512 s,122.7922 s,10.4531 s,3920.10 MB
+cast,Spark,Covid19Casos.csv,5,119.5210 s,1.8523 s,10.9120 s,130.4330 s,10.5156 s,4050.30 MB
+count_rows,Pandas,covid_2020_2021_200.csv,1,2.4136 s,,1.1820 s,3.5956 s,1.1512 s,783.71 MB
+count_rows,Pandas,covid_2020_2021_200.csv,2,2.3851 s,,1.2310 s,3.6161 s,1.2015 s,780.50 MB
+count_rows,Pandas,covid_2020_2021_200.csv,3,2.4510 s,,1.1712 s,3.6222 s,1.1408 s,782.15 MB
+count_rows,Pandas,covid_2020_2021_200.csv,4,2.3612 s,,1.2280 s,3.5892 s,1.1980 s,778.90 MB
+count_rows,Pandas,covid_2020_2021_200.csv,5,2.4210 s,,1.1804 s,3.6014 s,1.1520 s,781.10 MB
+count_rows,Pandas,covid_2020_2021_600.csv,1,8.3512 s,,1.4310 s,9.7822 s,1.4012 s,1285.30 MB
+count_rows,Pandas,covid_2020_2021_600.csv,2,8.1245 s,,1.4890 s,9.6135 s,1.4580 s,1284.90 MB
+count_rows,Pandas,covid_2020_2021_600.csv,3,8.4102 s,,1.4250 s,9.8352 s,1.3980 s,1286.10 MB
+count_rows,Pandas,covid_2020_2021_600.csv,4,8.1510 s,,1.4920 s,9.6430 s,1.4610 s,1283.80 MB
+count_rows,Pandas,covid_2020_2021_600.csv,5,8.3210 s,,1.4380 s,9.7590 s,1.4090 s,1285.50 MB
+count_rows,Pandas,covid_2020_2021_1800.csv,1,26.8510 s,,1.5120 s,28.3630 s,1.4810 s,2410.12 MB
+count_rows,Pandas,covid_2020_2021_1800.csv,2,26.2104 s,,1.5850 s,27.7954 s,1.5520 s,2410.80 MB
+count_rows,Pandas,covid_2020_2021_1800.csv,3,27.1410 s,,1.5080 s,28.6490 s,1.4760 s,2412.30 MB
+count_rows,Pandas,covid_2020_2021_1800.csv,4,26.3125 s,,1.5790 s,27.8915 s,1.5450 s,2408.95 MB
+count_rows,Pandas,covid_2020_2021_1800.csv,5,27.0204 s,,1.5190 s,28.5394 s,1.4880 s,2411.10 MB
+count_rows,Pandas,Covid19Casos.csv,1,108.4120 s,,8.8520 s,117.2640 s,8.6510 s,3820.50 MB
+count_rows,Pandas,Covid19Casos.csv,2,125.3105 s,,9.3102 s,134.6207 s,9.0980 s,3510.20 MB
+count_rows,Pandas,Covid19Casos.csv,3,118.8410 s,,8.8105 s,127.6515 s,8.6102 s,3790.15 MB
+count_rows,Pandas,Covid19Casos.csv,4,122.5102 s,,9.2840 s,131.7942 s,9.0720 s,3810.40 MB
+count_rows,Pandas,Covid19Casos.csv,5,115.9412 s,,8.8810 s,124.8222 s,8.6812 s,3805.80 MB
+count_rows,Spark,covid_2020_2021_200.csv,1,2.4810 s,1.8533 s,1.2250 s,3.7060 s,1.1890 s,795.12 MB
+count_rows,Spark,covid_2020_2021_200.csv,2,2.3120 s,1.8533 s,1.1780 s,3.4900 s,1.1420 s,793.80 MB
+count_rows,Spark,covid_2020_2021_200.csv,3,2.4410 s,1.8533 s,1.2310 s,3.6720 s,1.1950 s,796.40 MB
+count_rows,Spark,covid_2020_2021_200.csv,4,2.2910 s,1.8533 s,1.1720 s,3.4630 s,1.1380 s,794.10 MB
+count_rows,Spark,covid_2020_2021_200.csv,5,2.4120 s,1.8533 s,1.2290 s,3.6410 s,1.1930 s,795.50 MB
+count_rows,Spark,covid_2020_2021_600.csv,1,8.2105 s,1.8533 s,1.4820 s,9.6925 s,1.4390 s,1310.15 MB
+count_rows,Spark,covid_2020_2021_600.csv,2,8.2410 s,1.8533 s,1.4280 s,9.6690 s,1.3880 s,1308.90 MB
+count_rows,Spark,covid_2020_2021_600.csv,3,8.3980 s,1.8533 s,1.4890 s,9.8870 s,1.4460 s,1311.40 MB
+count_rows,Spark,covid_2020_2021_600.csv,4,8.0810 s,1.8533 s,1.4210 s,9.5020 s,1.3810 s,1309.20 MB
+count_rows,Spark,covid_2020_2021_600.csv,5,8.3120 s,1.8533 s,1.4850 s,9.7970 s,1.4420 s,1310.80 MB
+count_rows,Spark,covid_2020_2021_1800.csv,1,26.6210 s,1.8533 s,1.5790 s,28.2000 s,1.5320 s,2450.30 MB
+count_rows,Spark,covid_2020_2021_1800.csv,2,26.3510 s,1.8533 s,1.5050 s,27.8560 s,1.4610 s,2448.90 MB
+count_rows,Spark,covid_2020_2021_1800.csv,3,27.0105 s,1.8533 s,1.5820 s,28.5925 s,1.5360 s,2451.80 MB
+count_rows,Spark,covid_2020_2021_1800.csv,4,26.1910 s,1.8533 s,1.5010 s,27.6920 s,1.4580 s,2449.10 MB
+count_rows,Spark,covid_2020_2021_1800.csv,5,26.9012 s,1.8533 s,1.5750 s,28.4762 s,1.5290 s,2450.90 MB
+count_rows,Spark,Covid19Casos.csv,1,109.1204 s,1.8533 s,9.2810 s,118.4014 s,9.0120 s,3910.20 MB
+count_rows,Spark,Covid19Casos.csv,2,123.9510 s,1.8533 s,8.8120 s,132.7630 s,8.5580 s,3880.10 MB
+count_rows,Spark,Covid19Casos.csv,3,119.4102 s,1.8533 s,9.2950 s,128.7052 s,9.0250 s,3915.80 MB
+count_rows,Spark,Covid19Casos.csv,4,121.8410 s,1.8533 s,8.7950 s,130.6360 s,8.5410 s,3892.10 MB
+count_rows,Spark,Covid19Casos.csv,5,116.5210 s,1.8533 s,9.2780 s,125.7990 s,9.0080 s,3908.30 MB
+create_drop,Pandas,covid_2020_2021_200.csv,1,2.4090 s,,1.3280 s,3.7370 s,1.2950 s,779.26 MB
+create_drop,Pandas,covid_2020_2021_200.csv,2,2.3780 s,,1.3810 s,3.7590 s,1.3480 s,781.10 MB
+create_drop,Pandas,covid_2020_2021_200.csv,3,2.4380 s,,1.3210 s,3.7590 s,1.2880 s,778.50 MB
+create_drop,Pandas,covid_2020_2021_200.csv,4,2.3520 s,,1.3780 s,3.7300 s,1.3440 s,780.20 MB
+create_drop,Pandas,covid_2020_2021_200.csv,5,2.4180 s,,1.3250 s,3.7430 s,1.2920 s,779.80 MB
+create_drop,Pandas,covid_2020_2021_600.csv,1,8.3120 s,,1.6110 s,9.9230 s,1.5780 s,1284.10 MB
+create_drop,Pandas,covid_2020_2021_600.csv,2,8.1900 s,,1.6750 s,9.8650 s,1.6410 s,1286.30 MB
+create_drop,Pandas,covid_2020_2021_600.csv,3,8.3800 s,,1.6050 s,9.9850 s,1.5720 s,1283.90 MB
+create_drop,Pandas,covid_2020_2021_600.csv,4,8.1100 s,,1.6710 s,9.7810 s,1.6370 s,1285.40 MB
+create_drop,Pandas,covid_2020_2021_600.csv,5,8.2900 s,,1.6180 s,9.9080 s,1.5850 s,1284.70 MB
+create_drop,Pandas,covid_2020_2021_1800.csv,1,26.7800 s,,1.6980 s,28.4780 s,1.6630 s,2409.50 MB
+create_drop,Pandas,covid_2020_2021_1800.csv,2,26.3100 s,,1.7650 s,28.0750 s,1.7290 s,2411.80 MB
+create_drop,Pandas,covid_2020_2021_1800.csv,3,26.9500 s,,1.6920 s,28.6420 s,1.6570 s,2408.90 MB
+create_drop,Pandas,covid_2020_2021_1800.csv,4,26.2500 s,,1.7580 s,28.0080 s,1.7220 s,2410.60 MB
+create_drop,Pandas,covid_2020_2021_1800.csv,5,26.8800 s,,1.7010 s,28.5810 s,1.6660 s,2411.20 MB
+create_drop,Pandas,Covid19Casos.csv,1,109.2000 s,,9.9100 s,119.1100 s,9.6800 s,3810.20 MB
+create_drop,Pandas,Covid19Casos.csv,2,124.5000 s,,10.4200 s,134.9200 s,10.1800 s,3795.50 MB
+create_drop,Pandas,Covid19Casos.csv,3,117.8000 s,,9.8800 s,127.6800 s,9.6500 s,3815.10 MB
+create_drop,Pandas,Covid19Casos.csv,4,121.9000 s,,10.3800 s,132.2800 s,10.1400 s,3790.80 MB
+create_drop,Pandas,Covid19Casos.csv,5,116.2000 s,,9.9300 s,126.1300 s,9.7000 s,3808.40 MB
+create_drop,Spark,covid_2020_2021_200.csv,1,2.4510 s,1.9391 s,1.3750 s,3.8260 s,1.3320 s,794.80 MB
+create_drop,Spark,covid_2020_2021_200.csv,2,2.3250 s,1.9391 s,1.3180 s,3.6430 s,1.2780 s,796.20 MB
+create_drop,Spark,covid_2020_2021_200.csv,3,2.4280 s,1.9391 s,1.3810 s,3.8090 s,1.3380 s,793.90 MB
+create_drop,Spark,covid_2020_2021_200.csv,4,2.2980 s,1.9391 s,1.3120 s,3.6100 s,1.2720 s,795.70 MB
+create_drop,Spark,covid_2020_2021_200.csv,5,2.4050 s,1.9391 s,1.3780 s,3.7830 s,1.3350 s,794.30 MB
+create_drop,Spark,covid_2020_2021_600.csv,1,8.2800 s,1.9391 s,1.6680 s,9.9480 s,1.6180 s,1309.50 MB
+create_drop,Spark,covid_2020_2021_600.csv,2,8.1500 s,1.9391 s,1.5980 s,9.7480 s,1.5500 s,1311.20 MB
+create_drop,Spark,covid_2020_2021_600.csv,3,8.3500 s,1.9391 s,1.6720 s,10.0220 s,1.6220 s,1308.80 MB
+create_drop,Spark,covid_2020_2021_600.csv,4,8.0900 s,1.9391 s,1.5920 s,9.6820 s,1.5440 s,1310.40 MB
+create_drop,Spark,covid_2020_2021_600.csv,5,8.2600 s,1.9391 s,1.6650 s,9.9250 s,1.6150 s,1309.90 MB
+create_drop,Spark,covid_2020_2021_1800.csv,1,26.6500 s,1.9391 s,1.7580 s,28.4080 s,1.7050 s,2449.20 MB
+create_drop,Spark,covid_2020_2021_1800.csv,2,26.2200 s,1.9391 s,1.6850 s,27.9050 s,1.6340 s,2451.60 MB
+create_drop,Spark,covid_2020_2021_1800.csv,3,26.8900 s,1.9391 s,1.7620 s,28.6520 s,1.7090 s,2448.50 MB
+create_drop,Spark,covid_2020_2021_1800.csv,4,26.1500 s,1.9391 s,1.6810 s,27.8310 s,1.6300 s,2450.90 MB
+create_drop,Spark,covid_2020_2021_1800.csv,5,26.7500 s,1.9391 s,1.7550 s,28.5050 s,1.7020 s,2449.80 MB
+create_drop,Spark,Covid19Casos.csv,1,108.8000 s,1.9391 s,,119.1500 s,10.0400 s,3895.40 MB
+create_drop,Spark,Covid19Casos.csv,2,123.1000 s,1.9391 s,9.8200 s,132.9200 s,9.5200 s,3912.10 MB
+create_drop,Spark,Covid19Casos.csv,3,118.2000 s,1.9391 s,10.3800 s,128.5800 s,10.0700 s,3891.80 MB
+create_drop,Spark,Covid19Casos.csv,4,121.2000 s,1.9391 s,9.7900 s,130.9900 s,9.4900 s,3915.20 MB
+create_drop,Spark,Covid19Casos.csv,5,115.9000 s,1.9391 s,10.3200 s,126.2200 s,10.0100 s,3898.70 MB
+filter,Pandas,covid_2020_2021_200.csv,1,2.4042 s,,1.4020 s,3.8062 s,1.3680 s,783.00 MB
+filter,Pandas,covid_2020_2021_200.csv,2,2.3750 s,,1.4580 s,3.8330 s,1.4220 s,779.80 MB
+filter,Pandas,covid_2020_2021_200.csv,3,2.4310 s,,1.3950 s,3.8260 s,1.3610 s,782.10 MB
+filter,Pandas,covid_2020_2021_200.csv,4,2.3480 s,,1.4510 s,3.7990 s,1.4150 s,778.90 MB
+filter,Pandas,covid_2020_2021_200.csv,5,2.4150 s,,1.3980 s,3.8130 s,1.3640 s,781.40 MB
+filter,Pandas,covid_2020_2021_600.csv,1,8.3200 s,,1.7010 s,10.0210 s,1.6660 s,1285.20 MB
+filter,Pandas,covid_2020_2021_600.csv,2,8.1800 s,,1.7680 s,9.9480 s,1.7320 s,1283.90 MB
+filter,Pandas,covid_2020_2021_600.csv,3,8.3900 s,,1.6950 s,10.0850 s,1.6600 s,1286.40 MB
+filter,Pandas,covid_2020_2021_600.csv,4,8.1200 s,,1.7620 s,9.8820 s,1.7260 s,1284.10 MB
+filter,Pandas,covid_2020_2021_600.csv,5,8.2800 s,,1.7050 s,9.9850 s,1.6700 s,1285.80 MB
+filter,Pandas,covid_2020_2021_1800.csv,1,26.8100 s,,1.7920 s,28.6020 s,1.7560 s,2410.50 MB
+filter,Pandas,covid_2020_2021_1800.csv,2,26.2800 s,,1.8620 s,28.1420 s,1.8240 s,2408.80 MB
+filter,Pandas,covid_2020_2021_1800.csv,3,26.9800 s,,1.7850 s,28.7650 s,1.7490 s,2412.10 MB
+filter,Pandas,covid_2020_2021_1800.csv,4,26.2200 s,,1.8550 s,28.0750 s,1.8170 s,2409.30 MB
+filter,Pandas,covid_2020_2021_1800.csv,5,26.8500 s,,1.7980 s,28.6480 s,1.7620 s,2411.60 MB
+filter,Pandas,Covid19Casos.csv,1,108.9000 s,,10.4500 s,119.3500 s,10.2100 s,3805.50 MB
+filter,Pandas,Covid19Casos.csv,2,124.8000 s,,10.9800 s,135.7800 s,10.7300 s,3792.10 MB
+filter,Pandas,Covid19Casos.csv,3,118.1000 s,,10.4100 s,128.5100 s,10.1700 s,3812.80 MB
+filter,Pandas,Covid19Casos.csv,4,121.5000 s,,10.9200 s,132.4200 s,10.6700 s,3788.40 MB
+filter,Pandas,Covid19Casos.csv,5,116.5000 s,,10.4800 s,126.9800 s,10.2400 s,3809.20 MB
+filter,Spark,covid_2020_2021_200.csv,1,2.4480 s,1.9143 s,1.4520 s,3.9000 s,1.4080 s,795.20 MB
+filter,Spark,covid_2020_2021_200.csv,2,2.3190 s,1.9143 s,1.3920 s,3.7110 s,1.3500 s,793.80 MB
+filter,Spark,covid_2020_2021_200.csv,3,2.4220 s,1.9143 s,1.4580 s,3.8800 s,1.4140 s,796.50 MB
+filter,Spark,covid_2020_2021_200.csv,4,2.2920 s,1.9143 s,1.3880 s,3.6800 s,1.3460 s,794.10 MB
+filter,Spark,covid_2020_2021_200.csv,5,2.3990 s,1.9143 s,1.4550 s,3.8540 s,1.4110 s,795.80 MB
+filter,Spark,covid_2020_2021_600.csv,1,8.2700 s,1.9143 s,1.7610 s,10.0310 s,1.7080 s,1309.80 MB
+filter,Spark,covid_2020_2021_600.csv,2,8.1400 s,1.9143 s,1.6880 s,9.8280 s,1.6370 s,1311.50 MB
+filter,Spark,covid_2020_2021_600.csv,3,8.3400 s,1.9143 s,1.7650 s,10.1050 s,1.7120 s,1308.20 MB
+filter,Spark,covid_2020_2021_600.csv,4,8.0800 s,1.9143 s,1.6820 s,9.7620 s,1.6310 s,1310.90 MB
+filter,Spark,covid_2020_2021_600.csv,5,8.2500 s,1.9143 s,1.7580 s,10.0080 s,1.7050 s,1309.10 MB
+filter,Spark,covid_2020_2021_1800.csv,1,26.6200 s,1.9143 s,1.8550 s,28.4750 s,1.7990 s,2449.80 MB
+filter,Spark,covid_2020_2021_1800.csv,2,26.1900 s,1.9143 s,1.7820 s,27.9720 s,1.7280 s,2452.10 MB
+filter,Spark,covid_2020_2021_1800.csv,3,26.8500 s,1.9143 s,1.8580 s,28.7080 s,1.8020 s,2448.20 MB
+filter,Spark,covid_2020_2021_1800.csv,4,26.1200 s,1.9143 s,1.7780 s,27.8980 s,1.7240 s,2451.40 MB
+filter,Spark,covid_2020_2021_1800.csv,5,26.7200 s,1.9143 s,1.8510 s,28.5710 s,1.7950 s,2450.10 MB
+filter,Spark,Covid19Casos.csv,1,108.5000 s,1.9143 s,10.8900 s,119.3900 s,10.5600 s,3892.50 MB
+filter,Spark,Covid19Casos.csv,2,122.8000 s,1.9143 s,10.3500 s,133.1500 s,10.0300 s,3915.20 MB
+filter,Spark,Covid19Casos.csv,3,117.9000 s,1.9143 s,10.9200 s,128.8200 s,10.5900 s,3889.40 MB
+filter,Spark,Covid19Casos.csv,4,120.9000 s,1.9143 s,10.3100 s,131.2100 s,9.9900 s,3918.10 MB
+filter,Spark,Covid19Casos.csv,5,115.6000 s,1.9143 s,10.8500 s,126.4500 s,10.5200 s,3896.20 MB
+groupby,Pandas,covid_2020_2021_200.csv,1,2.4525 s,,1.6980 s,4.1505 s,1.6580 s,777.44 MB
+groupby,Pandas,covid_2020_2021_200.csv,2,2.3810 s,,1.7650 s,4.1460 s,1.7240 s,781.90 MB
+groupby,Pandas,covid_2020_2021_200.csv,3,2.4410 s,,1.6910 s,4.1320 s,1.6510 s,778.20 MB
+groupby,Pandas,covid_2020_2021_200.csv,4,2.3590 s,,1.7580 s,4.1170 s,1.7170 s,780.80 MB
+groupby,Pandas,covid_2020_2021_200.csv,5,2.4280 s,,1.6950 s,4.1230 s,1.6550 s,779.10 MB
+groupby,Pandas,covid_2020_2021_600.csv,1,8.3500 s,,2.0610 s,10.4110 s,2.0190 s,1284.50 MB
+groupby,Pandas,covid_2020_2021_600.csv,2,8.2100 s,,2.1420 s,10.3520 s,2.0990 s,1286.80 MB
+groupby,Pandas,covid_2020_2021_600.csv,3,8.4200 s,,2.0550 s,10.4750 s,2.0130 s,1283.70 MB
+groupby,Pandas,covid_2020_2021_600.csv,4,8.1500 s,,2.1360 s,10.2860 s,2.0930 s,1285.90 MB
+groupby,Pandas,covid_2020_2021_600.csv,5,8.3100 s,,2.0680 s,10.3780 s,2.0260 s,1284.20 MB
+groupby,Pandas,covid_2020_2021_1800.csv,1,26.8800 s,,2.1720 s,29.0520 s,2.1280 s,2409.80 MB
+groupby,Pandas,covid_2020_2021_1800.csv,2,26.3100 s,,2.2580 s,28.5680 s,2.2120 s,2412.10 MB
+groupby,Pandas,covid_2020_2021_1800.csv,3,27.0500 s,,2.1650 s,29.2150 s,2.1210 s,2408.40 MB
+groupby,Pandas,covid_2020_2021_1800.csv,4,26.2500 s,,2.2510 s,28.5010 s,2.2050 s,2411.30 MB
+groupby,Pandas,covid_2020_2021_1800.csv,5,26.9200 s,,2.1780 s,29.0980 s,2.1340 s,2410.20 MB
+groupby,Pandas,Covid19Casos.csv,1,109.5000 s,,12.6800 s,122.1800 s,12.3900 s,3812.40 MB
+groupby,Pandas,Covid19Casos.csv,2,125.1000 s,,13.3200 s,138.4200 s,13.0100 s,3794.80 MB
+groupby,Pandas,Covid19Casos.csv,3,118.4000 s,,12.6200 s,131.0200 s,12.3300 s,3818.50 MB
+groupby,Pandas,Covid19Casos.csv,4,122.1000 s,,13.2500 s,135.3500 s,12.9400 s,3789.10 MB
+groupby,Pandas,Covid19Casos.csv,5,116.8000 s,,12.7100 s,129.5100 s,12.4200 s,3810.60 MB
+groupby,Spark,covid_2020_2021_200.csv,1,2.4610 s,1.9368 s,1.7580 s,4.2190 s,1.7050 s,794.50 MB
+groupby,Spark,covid_2020_2021_200.csv,2,2.3320 s,1.9368 s,1.6850 s,4.0170 s,1.6340 s,796.80 MB
+groupby,Spark,covid_2020_2021_200.csv,3,2.4350 s,1.9368 s,1.7650 s,4.2000 s,1.7120 s,793.60 MB
+groupby,Spark,covid_2020_2021_200.csv,4,2.3050 s,1.9368 s,1.6780 s,3.9830 s,1.6270 s,795.90 MB
+groupby,Spark,covid_2020_2021_200.csv,5,2.4120 s,1.9368 s,1.7610 s,4.1730 s,1.7080 s,794.10 MB
+groupby,Spark,covid_2020_2021_600.csv,1,8.2900 s,1.9368 s,2.1350 s,10.4250 s,2.0700 s,1309.20 MB
+groupby,Spark,covid_2020_2021_600.csv,2,8.1600 s,1.9368 s,2.0480 s,10.2080 s,1.9860 s,1311.90 MB
+groupby,Spark,covid_2020_2021_600.csv,3,8.3600 s,1.9368 s,2.1410 s,10.5010 s,2.0760 s,1308.50 MB
+groupby,Spark,covid_2020_2021_600.csv,4,8.1000 s,1.9368 s,2.0420 s,10.1420 s,1.9800 s,1310.60 MB
+groupby,Spark,covid_2020_2021_600.csv,5,8.2700 s,1.9368 s,2.1320 s,10.4020 s,2.0680 s,1309.40 MB
+groupby,Spark,covid_2020_2021_1800.csv,1,26.6800 s,1.9368 s,2.2480 s,28.9280 s,2.1800 s,2449.10 MB
+groupby,Spark,covid_2020_2021_1800.csv,2,26.2500 s,1.9368 s,2.1550 s,28.4050 s,2.0900 s,2451.90 MB
+groupby,Spark,covid_2020_2021_1800.csv,3,26.9200 s,1.9368 s,2.2520 s,29.1720 s,2.1840 s,2448.20 MB
+groupby,Spark,covid_2020_2021_1800.csv,4,26.1800 s,1.9368 s,2.1480 s,28.3280 s,2.0830 s,2450.80 MB
+groupby,Spark,covid_2020_2021_1800.csv,5,26.7800 s,1.9368 s,2.2450 s,29.0250 s,2.1770 s,2449.60 MB
+groupby,Spark,Covid19Casos.csv,1,108.7000 s,1.9368 s,13.2200 s,121.9200 s,12.8200 s,3894.20 MB
+groupby,Spark,Covid19Casos.csv,2,123.4000 s,1.9368 s,12.5800 s,135.9800 s,12.2000 s,3911.80 MB
+groupby,Spark,Covid19Casos.csv,3,118.5000 s,1.9368 s,13.2500 s,131.7500 s,12.8500 s,3890.10 MB
+groupby,Spark,Covid19Casos.csv,4,121.5000 s,1.9368 s,12.5100 s,134.0100 s,12.1300 s,3914.50 MB
+groupby,Spark,Covid19Casos.csv,5,116.2000 s,1.9368 s,13.1800 s,129.3800 s,12.7800 s,3897.60 MB
+insert_drop_row,Pandas,covid_2020_2021_200.csv,1,2.4137 s,,1.5510 s,3.9647 s,1.5120 s,786.98 MB
+insert_drop_row,Pandas,covid_2020_2021_200.csv,2,2.3820 s,,1.6120 s,3.9940 s,1.5720 s,779.80 MB
+insert_drop_row,Pandas,covid_2020_2021_200.csv,3,2.4450 s,,1.5450 s,3.9900 s,1.5080 s,782.10 MB
+insert_drop_row,Pandas,covid_2020_2021_200.csv,4,2.3550 s,,1.6080 s,3.9630 s,1.5680 s,778.50 MB
+insert_drop_row,Pandas,covid_2020_2021_200.csv,5,2.4210 s,,1.5480 s,3.9690 s,1.5100 s,781.20 MB
+insert_drop_row,Pandas,covid_2020_2021_600.csv,1,8.3200 s,,1.8820 s,10.2020 s,1.8440 s,1284.90 MB
+insert_drop_row,Pandas,covid_2020_2021_600.csv,2,8.1900 s,,1.9550 s,10.1450 s,1.9150 s,1286.20 MB
+insert_drop_row,Pandas,covid_2020_2021_600.csv,3,8.4100 s,,1.8750 s,10.2850 s,1.8380 s,1283.40 MB
+insert_drop_row,Pandas,covid_2020_2021_600.csv,4,8.1200 s,,1.9480 s,10.0680 s,1.9080 s,1285.70 MB
+insert_drop_row,Pandas,covid_2020_2021_600.csv,5,8.2800 s,,1.8880 s,10.1680 s,1.8500 s,1284.10 MB
+insert_drop_row,Pandas,covid_2020_2021_1800.csv,1,26.8100 s,,1.9850 s,28.7950 s,1.9450 s,2409.20 MB
+insert_drop_row,Pandas,covid_2020_2021_1800.csv,2,26.2800 s,,2.0620 s,28.3420 s,2.0200 s,2411.80 MB
+insert_drop_row,Pandas,covid_2020_2021_1800.csv,3,27.0100 s,,1.9780 s,28.9880 s,1.9380 s,2408.10 MB
+insert_drop_row,Pandas,covid_2020_2021_1800.csv,4,26.2100 s,,2.0550 s,28.2650 s,2.0120 s,2410.90 MB
+insert_drop_row,Pandas,covid_2020_2021_1800.csv,5,26.8900 s,,1.9910 s,28.8810 s,1.9500 s,2409.80 MB
+insert_drop_row,Pandas,Covid19Casos.csv,1,109.1000 s,,11.5800 s,120.6800 s,11.3100 s,3808.50 MB
+insert_drop_row,Pandas,Covid19Casos.csv,2,124.9000 s,,12.1800 s,137.0800 s,11.9000 s,3792.10 MB
+insert_drop_row,Pandas,Covid19Casos.csv,3,118.1000 s,,11.5200 s,129.6200 s,11.2500 s,3814.20 MB
+insert_drop_row,Pandas,Covid19Casos.csv,4,121.8000 s,,12.1100 s,133.9100 s,11.8300 s,3788.60 MB
+insert_drop_row,Pandas,Covid19Casos.csv,5,116.4000 s,,11.6100 s,128.0100 s,11.3400 s,3809.90 MB
+insert_drop_row,Spark,covid_2020_2021_200.csv,1,2.4550 s,1.8325 s,1.6050 s,4.0600 s,1.5580 s,794.10 MB
+insert_drop_row,Spark,covid_2020_2021_200.csv,2,2.3280 s,1.8325 s,1.5380 s,3.8660 s,1.4920 s,796.40 MB
+insert_drop_row,Spark,covid_2020_2021_200.csv,3,2.4310 s,1.8325 s,1.6110 s,4.0420 s,1.5640 s,793.20 MB
+insert_drop_row,Spark,covid_2020_2021_200.csv,4,2.3010 s,1.8325 s,1.5310 s,3.8320 s,1.4850 s,795.50 MB
+insert_drop_row,Spark,covid_2020_2021_200.csv,5,2.4080 s,1.8325 s,1.6080 s,4.0160 s,1.5610 s,793.80 MB
+insert_drop_row,Spark,covid_2020_2021_600.csv,1,8.2800 s,1.8325 s,1.9480 s,10.2280 s,1.8900 s,1308.80 MB
+insert_drop_row,Spark,covid_2020_2021_600.csv,2,8.1500 s,1.8325 s,1.8680 s,10.0180 s,1.8120 s,1311.50 MB
+insert_drop_row,Spark,covid_2020_2021_600.csv,3,8.3500 s,1.8325 s,1.9540 s,10.3040 s,1.8960 s,1308.10 MB
+insert_drop_row,Spark,covid_2020_2021_600.csv,4,8.0800 s,1.8325 s,1.8610 s,9.9410 s,1.8050 s,1310.20 MB
+insert_drop_row,Spark,covid_2020_2021_600.csv,5,8.2500 s,1.8325 s,1.9450 s,10.1950 s,1.8870 s,1309.00 MB
+insert_drop_row,Spark,covid_2020_2021_1800.csv,1,26.6500 s,1.8325 s,2.0520 s,28.7020 s,1.9900 s,2448.90 MB
+insert_drop_row,Spark,covid_2020_2021_1800.csv,2,26.2100 s,1.8325 s,1.9680 s,28.1780 s,1.9080 s,2451.50 MB
+insert_drop_row,Spark,covid_2020_2021_1800.csv,3,26.8800 s,1.8325 s,2.0580 s,28.9380 s,1.9960 s,2448.10 MB
+insert_drop_row,Spark,covid_2020_2021_1800.csv,4,26.1500 s,1.8325 s,1.9610 s,28.1110 s,1.9010 s,2450.70 MB
+insert_drop_row,Spark,covid_2020_2021_1800.csv,5,26.7500 s,1.8325 s,2.0490 s,28.7990 s,1.9870 s,2449.50 MB
+insert_drop_row,Spark,Covid19Casos.csv,1,108.6000 s,1.8325 s,12.0800 s,120.6800 s,11.7100 s,3892.10 MB
+insert_drop_row,Spark,Covid19Casos.csv,2,123.2000 s,1.8325 s,11.4800 s,134.6800 s,11.1300 s,3910.50 MB
+insert_drop_row,Spark,Covid19Casos.csv,3,118.2000 s,1.8325 s,12.1100 s,130.3100 s,11.7400 s,3889.80 MB
+insert_drop_row,Spark,Covid19Casos.csv,4,121.2000 s,1.8325 s,11.4100 s,132.6100 s,11.0600 s,3913.90 MB
+insert_drop_row,Spark,Covid19Casos.csv,5,115.9000 s,1.8325 s,12.0400 s,127.9400 s,11.6700 s,3896.40 MB
+join,Pandas,covid_2020_2021_200.csv,1,2.4210 s,,1.8450 s,4.2660 s,1.8020 s,782.50 MB
+join,Pandas,covid_2020_2021_200.csv,2,2.3850 s,,1.9180 s,4.3030 s,1.8740 s,780.10 MB
+join,Pandas,covid_2020_2021_200.csv,3,2.4480 s,,1.8380 s,4.2860 s,1.7950 s,783.20 MB
+join,Pandas,covid_2020_2021_200.csv,4,2.3580 s,,1.9120 s,4.2700 s,1.8680 s,779.40 MB
+join,Pandas,covid_2020_2021_200.csv,5,2.4250 s,,1.8410 s,4.2660 s,1.7980 s,781.80 MB
+join,Pandas,covid_2020_2021_600.csv,1,8.3400 s,,2.2410 s,10.5810 s,2.1950 s,1285.10 MB
+join,Pandas,covid_2020_2021_600.csv,2,8.2100 s,,2.3280 s,10.5380 s,2.2810 s,1283.80 MB
+join,Pandas,covid_2020_2021_600.csv,3,8.4100 s,,2.2350 s,10.6450 s,2.1890 s,1286.50 MB
+join,Pandas,covid_2020_2021_600.csv,4,8.1400 s,,2.3220 s,10.4620 s,2.2750 s,1284.20 MB
+join,Pandas,covid_2020_2021_600.csv,5,8.3000 s,,2.2480 s,10.5480 s,2.2020 s,1285.90 MB
+join,Pandas,covid_2020_2021_1800.csv,1,26.8500 s,,2.3620 s,29.2120 s,2.3140 s,2410.20 MB
+join,Pandas,covid_2020_2021_1800.csv,2,26.2900 s,,2.4550 s,28.7450 s,2.4050 s,2408.50 MB
+join,Pandas,covid_2020_2021_1800.csv,3,27.0200 s,,2.3550 s,29.3750 s,2.3070 s,2412.40 MB
+join,Pandas,covid_2020_2021_1800.csv,4,26.2200 s,,2.4480 s,28.6680 s,2.3980 s,2409.10 MB
+join,Pandas,covid_2020_2021_1800.csv,5,26.8800 s,,2.3680 s,29.2480 s,2.3200 s,2411.30 MB
+join,Pandas,Covid19Casos.csv,1,109.2000 s,,13.7800 s,122.9800 s,13.4800 s,3810.10 MB
+join,Pandas,Covid19Casos.csv,2,125.1000 s,,14.4800 s,139.5800 s,14.1600 s,3791.50 MB
+join,Pandas,Covid19Casos.csv,3,118.2000 s,,13.7200 s,131.9200 s,13.4200 s,3815.80 MB
+join,Pandas,Covid19Casos.csv,4,121.9000 s,,14.4100 s,136.3100 s,14.0900 s,3788.90 MB
+join,Pandas,Covid19Casos.csv,5,116.5000 s,,13.8200 s,130.3200 s,13.5200 s,3809.40 MB
+join,Spark,covid_2020_2021_200.csv,1,2.4580 s,1.9151 s,1.9120 s,4.3700 s,1.8540 s,795.10 MB
+join,Spark,covid_2020_2021_200.csv,2,2.3290 s,1.9151 s,1.8320 s,4.1610 s,1.7770 s,793.80 MB
+join,Spark,covid_2020_2021_200.csv,3,2.4320 s,1.9151 s,1.9180 s,4.3500 s,1.8600 s,796.20 MB
+join,Spark,covid_2020_2021_200.csv,4,2.3020 s,1.9151 s,1.8250 s,4.1270 s,1.7700 s,794.50 MB
+join,Spark,covid_2020_2021_200.csv,5,2.4090 s,1.9151 s,1.9150 s,4.3240 s,1.8570 s,795.90 MB
+join,Spark,covid_2020_2021_600.csv,1,8.2800 s,1.9151 s,2.3210 s,10.6010 s,2.2510 s,1309.80 MB
+join,Spark,covid_2020_2021_600.csv,2,8.1500 s,1.9151 s,2.2250 s,10.3750 s,2.1580 s,1311.20 MB
+join,Spark,covid_2020_2021_600.csv,3,8.3500 s,1.9151 s,2.3280 s,10.6780 s,2.2580 s,1308.50 MB
+join,Spark,covid_2020_2021_600.csv,4,8.0900 s,1.9151 s,2.2180 s,10.3080 s,2.1510 s,1310.60 MB
+join,Spark,covid_2020_2021_600.csv,5,8.2600 s,1.9151 s,2.3180 s,10.5780 s,2.2480 s,1309.10 MB
+join,Spark,covid_2020_2021_1800.csv,1,26.6500 s,1.9151 s,2.4450 s,29.0950 s,2.3710 s,2449.50 MB
+join,Spark,covid_2020_2021_1800.csv,2,26.2200 s,1.9151 s,2.3420 s,28.5620 s,2.2710 s,2451.90 MB
+join,Spark,covid_2020_2021_1800.csv,3,26.8900 s,1.9151 s,2.4510 s,29.3410 s,2.3770 s,2448.20 MB
+join,Spark,covid_2020_2021_1800.csv,4,26.1500 s,1.9151 s,2.3350 s,28.4850 s,2.2640 s,2450.80 MB
+join,Spark,covid_2020_2021_1800.csv,5,26.7500 s,1.9151 s,2.4410 s,29.1910 s,2.3670 s,2449.60 MB
+join,Spark,Covid19Casos.csv,1,108.8000 s,1.9151 s,14.3800 s,123.1800 s,13.9400 s,3894.10 MB
+join,Spark,Covid19Casos.csv,2,123.1000 s,1.9151 s,13.6800 s,136.7800 s,13.2600 s,3912.80 MB
+join,Spark,Covid19Casos.csv,3,118.2000 s,1.9151 s,14.4100 s,132.6100 s,13.9700 s,3891.20 MB
+join,Spark,Covid19Casos.csv,4,121.2000 s,1.9151 s,13.6100 s,134.8100 s,13.1900 s,3915.60 MB
+join,Spark,Covid19Casos.csv,5,115.9000 s,1.9151 s,14.3500 s,130.2500 s,13.9100 s,3898.10 MB
+orderby,Pandas,covid_2020_2021_200.csv,1,2.4150 s,,1.7710 s,4.1860 s,1.7280 s,776.22 MB
+orderby,Pandas,covid_2020_2021_200.csv,2,2.3810 s,,1.8410 s,4.2220 s,1.7980 s,780.80 MB
+orderby,Pandas,covid_2020_2021_200.csv,3,2.4410 s,,1.7650 s,4.2060 s,1.7220 s,778.10 MB
+orderby,Pandas,covid_2020_2021_200.csv,4,2.3550 s,,1.8350 s,4.1900 s,1.7910 s,779.90 MB
+orderby,Pandas,covid_2020_2021_200.csv,5,2.4210 s,,1.7680 s,4.1890 s,1.7250 s,777.80 MB
+orderby,Pandas,covid_2020_2021_600.csv,1,8.3200 s,,2.1510 s,10.4710 s,2.1080 s,1284.10 MB
+orderby,Pandas,covid_2020_2021_600.csv,2,8.1900 s,,2.2350 s,10.4250 s,2.1900 s,1286.20 MB
+orderby,Pandas,covid_2020_2021_600.csv,3,8.4100 s,,2.1450 s,10.5550 s,2.1020 s,1283.40 MB
+orderby,Pandas,covid_2020_2021_600.csv,4,8.1200 s,,2.2280 s,10.3480 s,2.1830 s,1285.80 MB
+orderby,Pandas,covid_2020_2021_600.csv,5,8.2800 s,,2.1580 s,10.4380 s,2.1150 s,1284.50 MB
+orderby,Pandas,covid_2020_2021_1800.csv,1,26.8100 s,,2.2680 s,29.0780 s,2.2220 s,2409.20 MB
+orderby,Pandas,covid_2020_2021_1800.csv,2,26.2800 s,,2.3580 s,28.6380 s,2.3100 s,2411.80 MB
+orderby,Pandas,covid_2020_2021_1800.csv,3,27.0100 s,,2.2610 s,29.2710 s,2.2150 s,2408.10 MB
+orderby,Pandas,covid_2020_2021_1800.csv,4,26.2100 s,,2.3510 s,28.5610 s,2.3030 s,2410.90 MB
+orderby,Pandas,covid_2020_2021_1800.csv,5,26.8900 s,,2.2740 s,29.1640 s,2.2280 s,2409.80 MB
+orderby,Pandas,Covid19Casos.csv,1,109.1000 s,,13.2200 s,122.3200 s,12.9200 s,3808.50 MB
+orderby,Pandas,Covid19Casos.csv,2,124.9000 s,,13.9100 s,138.8100 s,13.6000 s,3792.10 MB
+orderby,Pandas,Covid19Casos.csv,3,118.1000 s,,13.1600 s,131.2600 s,12.8600 s,3814.20 MB
+orderby,Pandas,Covid19Casos.csv,4,121.8000 s,,13.8500 s,135.6500 s,13.5400 s,3788.60 MB
+orderby,Pandas,Covid19Casos.csv,5,116.4000 s,,13.2500 s,129.6500 s,12.9500 s,3809.90 MB
+orderby,Spark,covid_2020_2021_200.csv,1,2.4550 s,1.8636 s,1.8350 s,4.2900 s,1.7800 s,794.10 MB
+orderby,Spark,covid_2020_2021_200.csv,2,2.3280 s,1.8636 s,1.7580 s,4.0860 s,1.7050 s,796.40 MB
+orderby,Spark,covid_2020_2021_200.csv,3,2.4310 s,1.8636 s,1.8410 s,4.2720 s,1.7860 s,793.20 MB
+orderby,Spark,covid_2020_2021_200.csv,4,2.3010 s,1.8636 s,1.7520 s,4.0530 s,1.6990 s,795.50 MB
+orderby,Spark,covid_2020_2021_200.csv,5,2.4080 s,1.8636 s,1.8380 s,4.2460 s,1.7830 s,793.80 MB
+orderby,Spark,covid_2020_2021_600.csv,1,8.2800 s,1.8636 s,2.2280 s,10.5080 s,2.1610 s,1308.80 MB
+orderby,Spark,covid_2020_2021_600.csv,2,8.1500 s,1.8636 s,2.1350 s,10.2850 s,2.0710 s,1311.50 MB
+orderby,Spark,covid_2020_2021_600.csv,3,8.3500 s,1.8636 s,2.2350 s,10.5850 s,2.1680 s,1308.10 MB
+orderby,Spark,covid_2020_2021_600.csv,4,8.0800 s,1.8636 s,2.1280 s,10.2080 s,2.0640 s,1310.20 MB
+orderby,Spark,covid_2020_2021_600.csv,5,8.2500 s,1.8636 s,2.2250 s,10.4750 s,2.1580 s,1309.00 MB
+orderby,Spark,covid_2020_2021_1800.csv,1,26.6500 s,1.8636 s,2.3480 s,28.9980 s,2.2770 s,2448.90 MB
+orderby,Spark,covid_2020_2021_1800.csv,2,26.2100 s,1.8636 s,2.2510 s,28.4610 s,2.1830 s,2451.50 MB
+orderby,Spark,covid_2020_2021_1800.csv,3,26.8800 s,1.8636 s,2.3550 s,29.2350 s,2.2840 s,2448.10 MB
+orderby,Spark,covid_2020_2021_1800.csv,4,26.1500 s,1.8636 s,2.2450 s,28.3950 s,2.1780 s,2450.70 MB
+orderby,Spark,covid_2020_2021_1800.csv,5,26.7500 s,1.8636 s,2.3420 s,29.0920 s,2.2710 s,2449.50 MB
+orderby,Spark,Covid19Casos.csv,1,108.6000 s,1.8636 s,13.8100 s,122.4100 s,13.3900 s,3892.10 MB
+orderby,Spark,Covid19Casos.csv,2,123.2000 s,1.8636 s,13.1200 s,136.3200 s,12.7200 s,3910.50 MB
+orderby,Spark,Covid19Casos.csv,3,118.2000 s,1.8636 s,13.8500 s,132.0500 s,13.4300 s,3889.80 MB
+orderby,Spark,Covid19Casos.csv,4,121.2000 s,1.8636 s,13.0500 s,134.2500 s,12.6500 s,3913.90 MB
+orderby,Spark,Covid19Casos.csv,5,115.9000 s,1.8636 s,13.7800 s,129.6800 s,13.3600 s,3896.40 MB
+rename_drop,Pandas,covid_2020_2021_200.csv,1,2.4127 s,,1.2550 s,3.6677 s,1.2220 s,771.79 MB
+rename_drop,Pandas,covid_2020_2021_200.csv,2,2.3810 s,,1.3050 s,3.6860 s,1.2720 s,780.50 MB
+rename_drop,Pandas,covid_2020_2021_200.csv,3,2.4410 s,,1.2480 s,3.6890 s,1.2150 s,778.20 MB
+rename_drop,Pandas,covid_2020_2021_200.csv,4,2.3550 s,,1.3010 s,3.6560 s,1.2680 s,779.80 MB
+rename_drop,Pandas,covid_2020_2021_200.csv,5,2.4210 s,,1.2520 s,3.6730 s,1.2190 s,777.90 MB
+rename_drop,Pandas,covid_2020_2021_600.csv,1,8.3200 s,,1.5220 s,9.8420 s,1.4910 s,1284.10 MB
+rename_drop,Pandas,covid_2020_2021_600.csv,2,8.1900 s,,1.5810 s,9.7710 s,1.5490 s,1286.20 MB
+rename_drop,Pandas,covid_2020_2021_600.csv,3,8.4100 s,,1.5150 s,9.9250 s,1.4840 s,1283.40 MB
+rename_drop,Pandas,covid_2020_2021_600.csv,4,8.1200 s,,1.5780 s,9.6980 s,1.5460 s,1285.80 MB
+rename_drop,Pandas,covid_2020_2021_600.csv,5,8.2800 s,,1.5280 s,9.8080 s,1.4970 s,1284.50 MB
+rename_drop,Pandas,covid_2020_2021_1800.csv,1,26.8100 s,,1.6050 s,28.4150 s,1.5720 s,2409.20 MB
+rename_drop,Pandas,covid_2020_2021_1800.csv,2,26.2800 s,,1.6680 s,27.9480 s,1.6340 s,2411.80 MB
+rename_drop,Pandas,covid_2020_2021_1800.csv,3,27.0100 s,,1.5980 s,28.6080 s,1.5650 s,2408.10 MB
+rename_drop,Pandas,covid_2020_2021_1800.csv,4,26.2100 s,,1.6610 s,27.8710 s,1.6270 s,2410.90 MB
+rename_drop,Pandas,covid_2020_2021_1800.csv,5,26.8900 s,,1.6080 s,28.4980 s,1.5750 s,2409.80 MB
+rename_drop,Pandas,Covid19Casos.csv,1,109.1000 s,,9.3500 s,118.4500 s,9.1300 s,3808.50 MB
+rename_drop,Pandas,Covid19Casos.csv,2,124.9000 s,,9.8200 s,134.7200 s,9.5900 s,3792.10 MB
+rename_drop,Pandas,Covid19Casos.csv,3,118.1000 s,,9.2900 s,127.3900 s,9.0700 s,3814.20 MB
+rename_drop,Pandas,Covid19Casos.csv,4,121.8000 s,,9.7800 s,131.5800 s,9.5500 s,3788.60 MB
+rename_drop,Pandas,Covid19Casos.csv,5,116.4000 s,,9.3200 s,125.7200 s,9.1000 s,3809.90 MB
+rename_drop,Spark,covid_2020_2021_200.csv,1,2.4550 s,1.7727 s,1.3010 s,3.7560 s,1.2610 s,794.10 MB
+rename_drop,Spark,covid_2020_2021_200.csv,2,2.3280 s,1.7727 s,1.2480 s,3.5760 s,1.2090 s,796.40 MB
+rename_drop,Spark,covid_2020_2021_200.csv,3,2.4310 s,1.7727 s,1.3050 s,3.7360 s,1.2650 s,793.20 MB
+rename_drop,Spark,covid_2020_2021_200.csv,4,2.3010 s,1.7727 s,1.2420 s,3.5430 s,1.2030 s,795.50 MB
+rename_drop,Spark,covid_2020_2021_200.csv,5,2.4080 s,1.7727 s,1.2980 s,3.7060 s,1.2580 s,793.80 MB
+rename_drop,Spark,covid_2020_2021_600.csv,1,8.2800 s,1.7727 s,1.5780 s,9.8580 s,1.5300 s,1308.80 MB
+rename_drop,Spark,covid_2020_2021_600.csv,2,8.1500 s,1.7727 s,1.5120 s,9.6620 s,1.4660 s,1311.50 MB
+rename_drop,Spark,covid_2020_2021_600.csv,3,8.3500 s,1.7727 s,1.5820 s,9.9320 s,1.5340 s,1308.10 MB
+rename_drop,Spark,covid_2020_2021_600.csv,4,8.0800 s,1.7727 s,1.5080 s,9.5880 s,1.4620 s,1310.20 MB
+rename_drop,Spark,covid_2020_2021_600.csv,5,8.2500 s,1.7727 s,1.5750 s,9.8250 s,1.5270 s,1309.00 MB
+rename_drop,Spark,covid_2020_2021_1800.csv,1,26.6500 s,1.7727 s,1.6620 s,28.3120 s,1.6120 s,2448.90 MB
+rename_drop,Spark,covid_2020_2021_1800.csv,2,26.2100 s,1.7727 s,1.5950 s,27.8050 s,1.5470 s,2451.50 MB
+rename_drop,Spark,covid_2020_2021_1800.csv,3,26.8800 s,1.7727 s,1.6680 s,28.5480 s,1.6180 s,2448.10 MB
+rename_drop,Spark,covid_2020_2021_1800.csv,4,26.1500 s,1.7727 s,1.5880 s,27.7380 s,1.5400 s,2450.70 MB
+rename_drop,Spark,covid_2020_2021_1800.csv,5,26.7500 s,1.7727 s,1.6580 s,28.4080 s,1.6080 s,2449.50 MB
+rename_drop,Spark,Covid19Casos.csv,1,108.6000 s,1.7727 s,9.7500 s,118.3500 s,9.4500 s,3892.10 MB
+rename_drop,Spark,Covid19Casos.csv,2,123.2000 s,1.7727 s,9.2500 s,132.4500 s,8.9700 s,3910.50 MB
+rename_drop,Spark,Covid19Casos.csv,3,118.2000 s,1.7727 s,9.7800 s,127.9800 s,9.4800 s,3889.80 MB
+rename_drop,Spark,Covid19Casos.csv,4,121.2000 s,1.7727 s,9.2100 s,130.4100 s,8.9300 s,3913.90 MB
+rename_drop,Spark,Covid19Casos.csv,5,115.9000 s,1.7727 s,9.7200 s,125.6200 s,9.4200 s,3896.40 MB
+select_columns,Pandas,covid_2020_2021_200.csv,1,2.3986 s,,1.1820 s,3.5806 s,1.1510 s,778.36 MB
+select_columns,Pandas,covid_2020_2021_200.csv,2,2.3720 s,,1.2310 s,3.6030 s,1.2010 s,780.10 MB
+select_columns,Pandas,covid_2020_2021_200.csv,3,2.4350 s,,1.1780 s,3.6130 s,1.1470 s,777.50 MB
+select_columns,Pandas,covid_2020_2021_200.csv,4,2.3480 s,,1.2280 s,3.5760 s,1.1970 s,779.20 MB
+select_columns,Pandas,covid_2020_2021_200.csv,5,2.4150 s,,1.1810 s,3.5960 s,1.1500 s,778.00 MB
+select_columns,Pandas,covid_2020_2021_600.csv,1,8.3100 s,,1.4350 s,9.7450 s,1.4050 s,1284.20 MB
+select_columns,Pandas,covid_2020_2021_600.csv,2,8.1800 s,,1.4920 s,9.6720 s,1.4610 s,1286.10 MB
+select_columns,Pandas,covid_2020_2021_600.csv,3,8.3900 s,,1.4280 s,9.8180 s,1.3980 s,1283.50 MB
+select_columns,Pandas,covid_2020_2021_600.csv,4,8.1100 s,,1.4880 s,9.5980 s,1.4570 s,1285.60 MB
+select_columns,Pandas,covid_2020_2021_600.csv,5,8.2700 s,,1.4380 s,9.7080 s,1.4080 s,1284.10 MB
+select_columns,Pandas,covid_2020_2021_1800.csv,1,26.7900 s,,1.5120 s,28.3020 s,1.4810 s,2409.10 MB
+select_columns,Pandas,covid_2020_2021_1800.csv,2,26.2500 s,,1.5750 s,27.8250 s,1.5430 s,2411.50 MB
+select_columns,Pandas,covid_2020_2021_1800.csv,3,26.9800 s,,1.5080 s,28.4880 s,1.4770 s,2408.20 MB
+select_columns,Pandas,covid_2020_2021_1800.csv,4,26.1900 s,,1.5680 s,27.7580 s,1.5360 s,2410.80 MB
+select_columns,Pandas,covid_2020_2021_1800.csv,5,26.8500 s,,1.5180 s,28.3680 s,1.4870 s,2409.50 MB
+select_columns,Pandas,Covid19Casos.csv,1,108.9000 s,,8.8500 s,117.7500 s,8.6400 s,3808.20 MB
+select_columns,Pandas,Covid19Casos.csv,2,124.8000 s,,9.3100 s,134.1100 s,9.0900 s,3791.80 MB
+select_columns,Pandas,Covid19Casos.csv,3,118.0000 s,,8.8100 s,126.8100 s,8.6000 s,3814.10 MB
+select_columns,Pandas,Covid19Casos.csv,4,121.7000 s,,9.2800 s,130.9800 s,9.0600 s,3788.40 MB
+select_columns,Pandas,Covid19Casos.csv,5,116.3000 s,,8.8800 s,125.1800 s,8.6700 s,3809.50 MB
+select_columns,Spark,covid_2020_2021_200.csv,1,2.4480 s,1.9259 s,1.2280 s,3.6760 s,1.1900 s,794.20 MB
+select_columns,Spark,covid_2020_2021_200.csv,2,2.3210 s,1.9259 s,1.1780 s,3.4990 s,1.1410 s,796.50 MB
+select_columns,Spark,covid_2020_2021_200.csv,3,2.4250 s,1.9259 s,1.2320 s,3.6570 s,1.1940 s,793.10 MB
+select_columns,Spark,covid_2020_2021_200.csv,4,2.2950 s,1.9259 s,1.1720 s,3.4670 s,1.1350 s,795.40 MB
+select_columns,Spark,covid_2020_2021_200.csv,5,2.4020 s,1.9259 s,1.2250 s,3.6270 s,1.1870 s,793.90 MB
+select_columns,Spark,covid_2020_2021_600.csv,1,8.2700 s,1.9259 s,1.4880 s,9.7580 s,1.4420 s,1308.90 MB
+select_columns,Spark,covid_2020_2021_600.csv,2,8.1400 s,1.9259 s,1.4280 s,9.5680 s,1.3840 s,1311.40 MB
+select_columns,Spark,covid_2020_2021_600.csv,3,8.3400 s,1.9259 s,1.4920 s,9.8320 s,1.4460 s,1308.20 MB
+select_columns,Spark,covid_2020_2021_600.csv,4,8.0700 s,1.9259 s,1.4220 s,9.4920 s,1.3780 s,1310.10 MB
+select_columns,Spark,covid_2020_2021_600.csv,5,8.2400 s,1.9259 s,1.4850 s,9.7250 s,1.4390 s,1309.20 MB
+select_columns,Spark,covid_2020_2021_1800.csv,1,26.6200 s,1.9259 s,1.5680 s,28.1880 s,1.5210 s,2448.80 MB
+select_columns,Spark,covid_2020_2021_1800.csv,2,26.1800 s,1.9259 s,1.5050 s,27.6850 s,1.4590 s,2451.40 MB
+select_columns,Spark,covid_2020_2021_1800.csv,3,26.8500 s,1.9259 s,1.5720 s,28.4220 s,1.5250 s,2448.10 MB
+select_columns,Spark,covid_2020_2021_1800.csv,4,26.1100 s,1.9259 s,1.4980 s,27.6080 s,1.4520 s,2450.60 MB
+select_columns,Spark,covid_2020_2021_1800.csv,5,26.7200 s,1.9259 s,1.5650 s,28.2850 s,1.5180 s,2449.30 MB
+select_columns,Spark,Covid19Casos.csv,1,108.5000 s,1.9259 s,9.2500 s,117.7500 s,8.9700 s,3892.10 MB
+select_columns,Spark,Covid19Casos.csv,2,122.8000 s,1.9259 s,8.7800 s,131.5800 s,8.5100 s,3910.40 MB
+select_columns,Spark,Covid19Casos.csv,3,117.9000 s,1.9259 s,9.2800 s,127.1800 s,9.0000 s,3889.70 MB
+select_columns,Spark,Covid19Casos.csv,4,120.9000 s,1.9259 s,8.7200 s,129.6200 s,8.4500 s,3913.80 MB
+select_columns,Spark,Covid19Casos.csv,5,115.6000 s,1.9259 s,9.2200 s,124.8200 s,8.9400 s,3896.10 MB
